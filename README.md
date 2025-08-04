@@ -55,7 +55,6 @@ VoiceCanvas 是一个先进的多语言语音合成平台，使用最新的 AI �
   - OpenAI TTS
   - AWS Polly
   - MiniMax
-- **并发控制**: 自定义速率限制
 - **部署**: Vercel
 
 ## 📦 安装
