@@ -1,6 +1,6 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
+  "name": "voicecanvas",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,7 +10,9 @@
     "lint": "next lint",
     "db:analyze": "tsx scripts/analyze-db.ts",
     "migrate:clone-tables": "tsx scripts/migrate-clone-tables.ts",
-    "check:translations": "tsx scripts/check-translations.ts"
+    "check:translations": "tsx scripts/check-translations.ts",
+    "test:discord": "tsx scripts/test-discord.ts",
+    "fix:oauth-users": "tsx scripts/fix-oauth-users.ts"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.7.4",
@@ -89,7 +91,8 @@
     "recharts": "^2.12.7",
     "resend": "^4.3.0",
     "sonner": "^1.5.0",
-    "stripe": "^17.6.0",
+    "stripe": "^18.3.0",
+    "swiper": "^11.2.6",
     "tailwind-merge": "^2.5.2",
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
@@ -101,7 +104,7 @@
     "@types/bcryptjs": "^2.4.6",
     "@types/jsonwebtoken": "^9.0.8",
     "@types/uuid": "^10.0.0",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.5.0",
     "prisma": "^6.5.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.2"

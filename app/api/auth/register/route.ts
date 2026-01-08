@@ -3,6 +3,7 @@ import { createUser, getUserByEmail } from '@/lib/db';
 import bcrypt from 'bcryptjs';
 import { z } from 'zod';
 import { createVerificationTokenAndSendEmail } from '@/lib/verification';
+import { sendUserRegistrationNotification } from '@/lib/discord-service';
 
 const registerSchema = z.object({
   email: z.string().email(),
@@ -64,6 +65,27 @@ export async function POST(req: Request) {
     } catch (emailError) {
       console.error('发送验证邮件失败:', emailError);
       // 即使发送邮件失败，用户也已经创建，继续返回成功
+    }
+
+    // 发送Discord通知
+    try {
+      console.log('发送Discord注册通知...用户数据:', {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        image: user.image
+      });
+      
+      await sendUserRegistrationNotification({
+        id: user.id,
+        name: user.name || undefined,
+        email: user.email,
+        image: user.image
+      });
+      console.log('Discord注册通知发送成功');
+    } catch (discordError) {
+      console.error('发送Discord注册通知失败:', discordError);
+      // 即使Discord通知失败，不影响注册流程
     }
 
     return NextResponse.json(

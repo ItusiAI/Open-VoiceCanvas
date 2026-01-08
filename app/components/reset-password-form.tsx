@@ -18,6 +18,7 @@ export default function ResetPasswordForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isTokenInvalid, setIsTokenInvalid] = useState(false);
+  const [redirecting, setRedirecting] = useState(false);
   
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -107,6 +108,17 @@ export default function ResetPasswordForm() {
     }
   };
   
+  // 成功重置密码后的逻辑
+  useEffect(() => {
+    if (isSuccess) {
+      setRedirecting(true);
+      // 重定向到主页
+      setTimeout(() => {
+        router.push("/");
+      }, 3000);
+    }
+  }, [isSuccess, router]);
+  
   return (
     <div className="flex min-h-screen items-center justify-center px-4 py-12">
       <Card className="w-full max-w-md">
@@ -122,6 +134,11 @@ export default function ResetPasswordForm() {
               : isTokenInvalid
                 ? (t('invalidResetToken') || 'Invalid or missing reset token. Please request a new password reset link.')
                 : (t('createNewPassword') || 'Create a new password for your account')}
+            {redirecting && (
+              <p className="text-sm text-muted-foreground">
+                {t("redirectingToLogin")}
+              </p>
+            )}
           </CardDescription>
         </CardHeader>
         

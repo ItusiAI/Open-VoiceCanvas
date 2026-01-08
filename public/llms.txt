@@ -1,0 +1,12 @@
+# https://voicecanvas.org llms.txt
+
+- [Voice Cloning Solutions](https://voicecanvas.org/): AI-powered voice cloning and design for multilingual audio.
+- [VoiceCanvas Sitemap](https://voicecanvas.org/sitemap.xml): Explore VoiceCanvas sitemap for various resources and links.
+- [Voice Cloning](https://voicecanvas.org/cloning): Easily clone voices with uploaded audio recordings.
+- [Robots.txt Access Rules](https://voicecanvas.org/robots.txt): Robots.txt file allowing AI crawlers access to specific files.
+- [VoiceCanvas Voice Tools](https://voicecanvas.org/app): Create and customize voice content with VoiceCanvas tools.
+- [Voice Design Tool](https://voicecanvas.org/design): Create and customize voices for various applications easily.
+- [VoiceCanvas Story](https://voicecanvas.org/story): Create and generate stories using AI technology.
+- [VoiceCanvas Pricing](https://voicecanvas.org/pricing): Explore affordable voice cloning and design plans for everyone.
+- [Privacy Policy](https://voicecanvas.org/privacy): VoiceCanvas explains data collection, usage, and user rights.
+- [VoiceCanvas Terms](https://voicecanvas.org/terms): VoiceCanvas terms for using voice services and accounts.

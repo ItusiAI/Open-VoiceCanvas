@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 主页 -->
+  <url>
+    <loc>https://voicecanvas.org/</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 工作区/应用页面 -->
+  <url>
+    <loc>https://voicecanvas.org/app</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 语音克隆页面 -->
+  <url>
+    <loc>https://voicecanvas.org/cloning</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 音色设计页面 -->
+  <url>
+    <loc>https://voicecanvas.org/design</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- AI故事生成与配音页面 -->
+  <url>
+    <loc>https://voicecanvas.org/story</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- AI播客生成页面 -->
+  <url>
+    <loc>https://voicecanvas.org/podcast</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 价格页面 -->
+  <url>
+    <loc>https://voicecanvas.org/pricing</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 隐私政策 -->
+  <url>
+    <loc>https://voicecanvas.org/privacy</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 服务条款 -->
+  <url>
+    <loc>https://voicecanvas.org/terms</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- AI爬虫内容文件 -->
+  <url>
+    <loc>https://voicecanvas.org/llms.txt</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://voicecanvas.org/llms-full.txt</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+</urlset> 

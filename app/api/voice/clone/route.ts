@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server';
-import { getServerSession } from 'next-auth';
-import { authOptions } from '@/lib/auth';
+import { validateUserSession } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
 import axios from 'axios';
 import FormData from 'form-data';
 import { createId } from '@paralleldrive/cuid2';
 
 export const dynamic = 'force-dynamic';
+export const maxDuration = 25; // Vercel免费版最大25秒
 
 // 错误消息
 const ERROR_MESSAGES = {
@@ -27,7 +27,7 @@ const ALLOWED_FORMATS = [
   'audio/mp3', 'audio/x-wav', 'audio/wave',
   'audio/x-m4a', 'audio/aac', 'audio/x-aac'
 ];
-const MAX_FILE_SIZE = 20 * 1024 * 1024; // 20MB
+const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 
 const MINIMAX_API_KEY = process.env.MINIMAX_API_KEY;
 const MINIMAX_GROUP_ID = process.env.MINIMAX_GROUP_ID;
@@ -93,28 +93,27 @@ async function uploadFile(file: Buffer, fileName: string, purpose: 'voice_clone'
 export async function POST(request: Request) {
   try {
     console.log('Starting voice clone process...');
-    const session = await getServerSession(authOptions);
-    if (!session?.user) {
-      console.log('No session found');
-      return NextResponse.json({ error: ERROR_MESSAGES.loginRequired }, { status: 401 });
+    
+    // 使用新的验证函数验证用户会话
+    const { valid, error, status, user } = await validateUserSession();
+    
+    if (!valid || !user) {
+      console.log('用户验证失败:', error);
+      return NextResponse.json({ error: error || '用户验证失败' }, { status: status || 401 });
     }
 
-    if (!session?.user?.email) {
-      console.log('无效的用户邮箱');
-      return NextResponse.json({ error: '无效的用户邮箱' }, { status: 400 });
-    }
-
-    const user = await prisma.users.findUnique({
-      where: { email: session.user.email },
+    // 获取用户的克隆配额
+    const userWithClones = await prisma.users.findUnique({
+      where: { id: user.id },
       select: {
         id: true,
         remaining_clones: true,
         used_clones: true
       }
     });
-    console.log('User found:', user);
+    console.log('User found:', userWithClones);
 
-    if (!user || user.remaining_clones <= 0) {
+    if (!userWithClones || userWithClones.remaining_clones <= 0) {
       console.log('Insufficient clone credits');
       return NextResponse.json({ error: ERROR_MESSAGES.insufficientCloneCredits }, { status: 403 });
     }
@@ -195,7 +194,7 @@ export async function POST(request: Request) {
 
     console.log('Updating user clone count...');
     const updatedUser = await prisma.users.update({
-      where: { id: user.id },
+      where: { id: userWithClones.id },
       data: {
         remaining_clones: {
           decrement: 1
@@ -214,7 +213,7 @@ export async function POST(request: Request) {
     const savedVoice = await prisma.clonedVoice.create({
       data: {
         id: createId(),
-        userId: user.id,
+        userId: userWithClones.id,
         voiceId: finalVoiceId,
         name: ERROR_MESSAGES.defaultClonedVoiceName(new Date().toLocaleString())
       }

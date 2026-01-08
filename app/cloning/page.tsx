@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Slider } from "@/components/ui/slider";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Volume2, Upload, Download, Pause, Play, Mic, Square } from "lucide-react";
+import { Volume2, Upload, Download, Pause, Play, Mic, Square, Trash2, Settings, FileText, ChevronUp } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/lib/i18n/language-context";
 import { synthesizeSpeech, playMinimaxAudio, downloadAudio } from "@/lib/polly-service";
@@ -22,10 +22,12 @@ import { VoiceOption } from "@/lib/voice-config";
 import { VoiceId } from "@aws-sdk/client-polly";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
+import { VoiceTitleUpdater } from "./title-updater";
+import { InsufficientCreditsDialog } from "@/components/InsufficientCreditsDialog";
 
 interface Language {
   code: string;
-  nameKey: 'chinese' | 'english' | 'japanese' | 'korean' | 'spanish' | 'french' | 'russian' | 'italian' | 'portuguese' | 'german' | 'indonesian' | 'arabic' | 'cantonese' | 'danish' | 'dutch' | 'finnish' | 'greek' | 'hebrew' | 'hindi' | 'hungarian' | 'norwegian' | 'polish' | 'romanian' | 'swedish' | 'turkish' | 'welsh' | 'britishEnglish' | 'australianEnglish' | 'mexicanSpanish' | 'usSpanish' |  'canadianFrench' | 'belgianFrench' | 'brazilianPortuguese' | 'austrianGerman' | 'swissGerman' | 'uaeArabic' | 'belgianDutch' | 'indianEnglish' | 'welshEnglish' | 'irishEnglish' | 'newZealandEnglish' | 'southAfricanEnglish' | 'singaporeanEnglish' | 'icelandic' | 'catalan' | 'czech' | 'vietnamese' | 'ukrainian' | 'thai';
+  nameKey: 'chinese' | 'english' | 'japanese' | 'korean' | 'spanish' | 'french' | 'russian' | 'italian' | 'portuguese' | 'german' | 'indonesian' | 'arabic' | 'cantonese' | 'danish' | 'dutch' | 'finnish' | 'greek' | 'hebrew' | 'hindi' | 'hungarian' | 'norwegian' | 'polish' | 'romanian' | 'swedish' | 'turkish' | 'welsh' | 'britishEnglish' | 'australianEnglish' | 'mexicanSpanish' | 'usSpanish' |  'canadianFrench' | 'belgianFrench' | 'brazilianPortuguese' | 'austrianGerman' | 'swissGerman' | 'uaeArabic' | 'belgianDutch' | 'indianEnglish' | 'welshEnglish' | 'irishEnglish' | 'newZealandEnglish' | 'southAfricanEnglish' | 'singaporeanEnglish' | 'icelandic' | 'catalan' | 'czech' | 'vietnamese' | 'ukrainian' | 'thai' | 'afrikaans' | 'bulgarian' | 'croatian' | 'lithuanian' | 'latvian' | 'macedonian' | 'malay' | 'persian' | 'filipino' | 'nynorsk' | 'serbian' | 'slovak' | 'slovenian' | 'swahili' | 'tamil' | 'urdu' | 'traditionalChinese' | 'saudiArabic';
 }
 
 interface CloneQuota {
@@ -44,32 +46,51 @@ const MINIMAX_LANGUAGES = [
   { code: 'zh-CN', nameKey: 'chinese' as const },
   { code: 'yue-CN', nameKey: 'cantonese' as const },
   { code: 'en-US', nameKey: 'english' as const },
-  { code: 'ja-JP', nameKey: 'japanese' as const },
-  { code: 'ko-KR', nameKey: 'korean' as const },
   { code: 'es-ES', nameKey: 'spanish' as const },
   { code: 'fr-FR', nameKey: 'french' as const },
   { code: 'ru-RU', nameKey: 'russian' as const },
-  { code: 'it-IT', nameKey: 'italian' as const },
-  { code: 'pt-PT', nameKey: 'portuguese' as const },
   { code: 'de-DE', nameKey: 'german' as const },
+  { code: 'pt-PT', nameKey: 'portuguese' as const },
+  { code: 'ar-SA', nameKey: 'arabic' as const },
+  { code: 'it-IT', nameKey: 'italian' as const },
+  { code: 'ja-JP', nameKey: 'japanese' as const },
+  { code: 'ko-KR', nameKey: 'korean' as const },
   { code: 'id-ID', nameKey: 'indonesian' as const },
   { code: 'vi-VN', nameKey: 'vietnamese' as const },
+  { code: 'tr-TR', nameKey: 'turkish' as const },
+  { code: 'nl-NL', nameKey: 'dutch' as const },
   { code: 'uk-UA', nameKey: 'ukrainian' as const },
   { code: 'th-TH', nameKey: 'thai' as const },
-  { code: 'tr-TR', nameKey: 'turkish' as const },
-  { code: 'ar-SA', nameKey: 'arabic' as const },
-  { code: 'nl-NL', nameKey: 'dutch' as const },
   { code: 'pl-PL', nameKey: 'polish' as const },
   { code: 'ro-RO', nameKey: 'romanian' as const },
   { code: 'el-GR', nameKey: 'greek' as const },
   { code: 'cs-CZ', nameKey: 'czech' as const },
   { code: 'fi-FI', nameKey: 'finnish' as const },
-  { code: 'hi-IN', nameKey: 'hindi' as const }
+  { code: 'hi-IN', nameKey: 'hindi' as const },
+  { code: 'bg-BG', nameKey: 'bulgarian' as const },
+  { code: 'da-DK', nameKey: 'danish' as const },
+  { code: 'he-IL', nameKey: 'hebrew' as const },
+  { code: 'ms-MY', nameKey: 'malay' as const },
+  { code: 'fa-IR', nameKey: 'persian' as const },
+  { code: 'sk-SK', nameKey: 'slovak' as const },
+  { code: 'sv-SE', nameKey: 'swedish' as const },
+  { code: 'hr-HR', nameKey: 'croatian' as const },
+  { code: 'tl-PH', nameKey: 'filipino' as const },
+  { code: 'hu-HU', nameKey: 'hungarian' as const },
+  { code: 'no-NO', nameKey: 'norwegian' as const },
+  { code: 'sl-SI', nameKey: 'slovenian' as const },
+  { code: 'ca-ES', nameKey: 'catalan' as const },
+  { code: 'nn-NO', nameKey: 'nynorsk' as const },
+  { code: 'ta-IN', nameKey: 'tamil' as const },
+  { code: 'af-ZA', nameKey: 'afrikaans' as const }
 ] as const;
 
 const SERVICE_LIMITS = {
   minimax: 10000  // Minimax 最大支持 10,000 字符
 };
+
+// 支持的情绪类型
+type EmotionType = "happy" | "sad" | "angry" | "fearful" | "disgusted" | "surprised" | "neutral";
 
 export default function Cloning() {
   const { t } = useLanguage();
@@ -91,12 +112,28 @@ export default function Cloning() {
   const [audioFile, setAudioFile] = useState<File | null>(null);
   const [isCloning, setIsCloning] = useState(false);
   const [clonedVoices, setClonedVoices] = useState<ClonedVoice[]>([]);
+  const [errorMessage, setErrorMessage] = useState("");
   const audioInputRef = useRef<HTMLInputElement>(null);
   const [isRecording, setIsRecording] = useState(false);
   const [mediaRecorder, setMediaRecorder] = useState<MediaRecorder | null>(null);
   const [recordedChunks, setRecordedChunks] = useState<Blob[]>([]);
   const [cloneQuota, setCloneQuota] = useState<CloneQuota>({ remaining_clones: 0, used_clones: 0 });
+  const [showInsufficientCreditsDialog, setShowInsufficientCreditsDialog] = useState(false);
   const router = useRouter();
+  
+  // 高级音频选项
+  const [vol, setVol] = useState(1); // 音量，范围(0,10]
+  const [pitch, setPitch] = useState(0); // 语调，范围[-12,12]
+  const [sampleRate, setSampleRate] = useState<number>(32000); // 采样率，默认32000
+  const [bitrate, setBitrate] = useState<number>(128000); // 比特率，默认128000
+  const [channel, setChannel] = useState<number>(2); // 声道数，默认2(双声道)
+  const [emotion, setEmotion] = useState<EmotionType | undefined>(undefined); // 情绪
+
+  // 有效的采样率选项
+  const SAMPLE_RATES = [8000, 16000, 22050, 24000, 32000, 44100];
+
+  // 有效的比特率选项
+  const BITRATES = [32000, 64000, 128000, 256000];
 
   // 在组件顶层定义错误消息
   const errorMessages = {
@@ -150,6 +187,14 @@ export default function Cloning() {
     }
   }, []);
 
+  // 返回顶部函数
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   // 处理文本输入，限制字符数
   const handleTextChange = (value: string) => {
     const limit = SERVICE_LIMITS.minimax;
@@ -170,17 +215,76 @@ export default function Cloning() {
     try {
       setIsProcessing(true);
 
+      if (!text) {
+        toast({
+          title: t("noTextError"),
+          description: t("pleaseEnterText"),
+          variant: "destructive",
+        });
+        return;
+      }
+
+      if (!selectedVoice) {
+        toast({
+          title: t("error"),
+          description: t("selectVoiceFirst"),
+          variant: "destructive",
+        });
+        return;
+      }
+
+      // 检查用户是否登录
+      if (!session?.user) {
+        toast({
+          title: t("loginRequired"),
+          description: t("loginToUseFeature"),
+          variant: "destructive",
+        });
+        return;
+      }
+
+      // 尝试刷新会话，确保用户数据完整
+      try {
+        console.log('刷新用户会话...');
+        const refreshResponse = await fetch('/api/auth/refresh-session');
+        if (!refreshResponse.ok) {
+          const refreshData = await refreshResponse.json();
+          if (refreshData.message?.includes('登录') || refreshData.message?.includes('身份验证')) {
+            toast({
+              title: t('error'),
+              description: t('please_login_again') || '请重新登录',
+              variant: "destructive",
+            });
+            return;
+          }
+        } else {
+          const refreshData = await refreshResponse.json();
+          if (refreshData.fixed) {
+            console.log('会话ID已修复:', refreshData);
+          }
+        }
+      } catch (error) {
+        console.error('会话刷新失败:', error);
+      }
+
       const audioData = await synthesizeSpeech({
         text,
         language: selectedLanguage,
         voiceId: selectedVoice?.id || '',
         speed: speed,
         service: 'minimax',
-        useClonedVoice: !!selectedVoice
+        useClonedVoice: !!selectedVoice,
+        vol,
+        pitch,
+        sampleRate,
+        bitrate,
+        channel,
+        emotion
       });
 
       const { audioContext, source } = await playMinimaxAudio(audioData, speed);
       setAudioVisualizer({ audioContext, source, url: '' });
+      setIsPlaying(true);
 
     } catch (error) {
       console.error(t('speechSynthesisError'), error);
@@ -223,6 +327,30 @@ export default function Cloning() {
         });
         return;
       }
+      
+      // 尝试刷新会话，确保用户数据完整
+      try {
+        console.log('刷新用户会话...');
+        const refreshResponse = await fetch('/api/auth/refresh-session');
+        if (!refreshResponse.ok) {
+          const refreshData = await refreshResponse.json();
+          if (refreshData.message?.includes('登录') || refreshData.message?.includes('身份验证')) {
+            toast({
+              title: t('error'),
+              description: t('please_login_again') || '请重新登录',
+              variant: "destructive",
+            });
+            return;
+          }
+        } else {
+          const refreshData = await refreshResponse.json();
+          if (refreshData.fixed) {
+            console.log('会话ID已修复:', refreshData);
+          }
+        }
+      } catch (error) {
+        console.error('会话刷新失败:', error);
+      }
 
       const audioData = await synthesizeSpeech({
         text,
@@ -230,7 +358,14 @@ export default function Cloning() {
         voiceId: selectedVoice.id as VoiceId,
         engine: selectedVoice.engine,
         speed,
-        service: 'minimax'
+        service: 'minimax',
+        useClonedVoice: !!selectedVoice,
+        vol,
+        pitch,
+        sampleRate,
+        bitrate,
+        channel,
+        emotion
       });
 
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
@@ -325,8 +460,8 @@ export default function Cloning() {
         return;
       }
 
-      // 检查文件大小（20MB限制）
-      const maxSize = 20 * 1024 * 1024; // 20MB in bytes
+      // 检查文件大小（5MB限制）
+      const maxSize = 5 * 1024 * 1024; // 5MB in bytes
       if (file.size > maxSize) {
         toast({
           title: t("error"),
@@ -460,125 +595,127 @@ export default function Cloning() {
 
   // 克隆声音
   const handleCloneVoice = async () => {
-    if (!audioFile) {
-      toast({
-        title: t("error"),
-        description: errorMessages.uploadAudioFirst,
-        variant: "destructive",
-      });
-      return;
-    }
+    setIsCloning(true);
+    setErrorMessage("");
 
-    // 检查用户是否登录
-    if (!session?.user) {
-      toast({
-        title: errorMessages.loginRequired,
-        description: errorMessages.loginForCloning,
-        variant: "destructive",
-      });
-      router.push('/auth/login');
-      return;
-    }
-
-    // 检查剩余次数
     try {
-      const response = await fetch('/api/user/plan');
-      if (!response.ok) {
-        throw new Error(errorMessages.fetchUserDataError);
-      }
-      const data = await response.json();
-      
-      if (!data.cloneQuota || data.cloneQuota.remaining_clones <= 0) {
+      if (!audioFile) {
         toast({
-          title: errorMessages.insufficientCloneCredits,
-          description: errorMessages.buyMoreCredits,
+          title: t('error'),
+          description: t('noAudioFile'),
           variant: "destructive",
         });
-        router.push('/pricing?type=clone');
         return;
       }
-    } catch (error) {
-      console.error(errorMessages.fetchUserDataError, error);
-      toast({
-        title: t("error"),
-        description: errorMessages.fetchUserDataError,
-        variant: "destructive",
-      });
-      return;
-    }
 
-    try {
-      setIsCloning(true);
+      // 检查用户是否登录
+      if (!session?.user) {
+        toast({
+          title: t('loginRequired'),
+          description: t('loginToCloneVoice'),
+          variant: "destructive",
+        });
+        return;
+      }
 
+      // 尝试刷新会话，确保用户数据完整
+      try {
+        console.log('刷新用户会话...');
+        const refreshResponse = await fetch('/api/auth/refresh-session');
+        if (!refreshResponse.ok) {
+          const refreshData = await refreshResponse.json();
+          if (refreshData.message?.includes('登录') || refreshData.message?.includes('身份验证')) {
+            toast({
+              title: t('error'),
+              description: t('please_login_again') || '请重新登录',
+              variant: "destructive",
+            });
+            return;
+          }
+        } else {
+          const refreshData = await refreshResponse.json();
+          if (refreshData.fixed) {
+            console.log('会话ID已修复:', refreshData);
+          }
+        }
+      } catch (error) {
+        console.error('会话刷新失败:', error);
+      }
+
+      // 检查用户克隆配额
+      try {
+        const quotaResponse = await fetch('/api/user/plan');
+        if (!quotaResponse.ok) {
+          toast({
+            title: t('error'),
+            description: t('planInfoFetchFailed'),
+            variant: "destructive",
+          });
+          return;
+        }
+
+        const quotaData = await quotaResponse.json();
+        const { cloneCredits, usedClones } = quotaData;
+        
+        if (cloneCredits - usedClones <= 0) {
+          setShowInsufficientCreditsDialog(true);
+          return;
+        }
+      } catch (error) {
+        console.error('获取用户配额信息失败:', error);
+        toast({
+          title: t('error'),
+          description: t('planInfoFetchFailed'),
+          variant: "destructive",
+        });
+        return;
+      }
+
+      // 创建表单数据
       const formData = new FormData();
       formData.append('audio', audioFile);
+      if (selectedVoice?.name) {
+        formData.append('name', selectedVoice.name);
+      }
 
-      toast({
-        title: errorMessages.startCloningTitle,
-        description: errorMessages.startCloningDesc,
-      });
-
+      // 发送克隆请求
       const response = await fetch('/api/voice/clone', {
         method: 'POST',
-        body: formData
+        body: formData,
       });
 
       if (!response.ok) {
-        let errorMessage = errorMessages.cloneVoiceFailed;
-        try {
-          // 检查响应的内容类型
-          const contentType = response.headers.get('content-type');
-          if (contentType && contentType.includes('application/json')) {
-            const errorData = await response.json();
-            if (errorData.error) {
-              errorMessage = errorData.error;
-            }
-          } else {
-            // 如果不是JSON，尝试获取文本内容
-            const textContent = await response.text();
-            console.error('非JSON错误响应:', textContent.substring(0, 200) + '...');
-          }
-        } catch (parseError) {
-          console.error('解析错误响应失败:', parseError);
+        const errorData = await response.json();
+        // 检查是否是额度不足错误
+        if (response.status === 403 && errorData.error === 'Insufficient clone credits') {
+          setShowInsufficientCreditsDialog(true);
+          return;
         }
-        throw new Error(errorMessage);
+        throw new Error(errorData.message || 'Voice cloning failed');
       }
 
-      // 安全地解析JSON响应
-      let data;
-      try {
-        data = await response.json();
-      } catch (jsonError) {
-        console.error('解析JSON响应失败:', jsonError);
-        throw new Error(errorMessages.invalidResponse);
-      }
-      
-      if (!data.voiceId) {
-        throw new Error(errorMessages.invalidVoiceId);
-      }
+      const data = await response.json();
+      console.log('克隆成功:', data);
 
-      await fetchClonedVoices();
-
-      const clonedVoice: VoiceOption = {
+      setClonedVoices(prev => [...prev, {
         id: data.savedVoice.voiceId,
-        gender: 'Female',
-        provider: 'minimax',
+        voiceId: data.savedVoice.voiceId,
         name: data.savedVoice.name,
-      };
-
-      setSelectedVoice(clonedVoice);
-      
+        createdAt: new Date().toISOString()
+      }]);
       toast({
-        title: errorMessages.cloneSuccess,
-        description: errorMessages.cloneReadyToUse,
+        title: t('success'),
+        description: t('voiceCloningSuccess'),
       });
 
-      handleResetAudio();
+      // 更新用户声音列表
+      fetchClonedVoices();
     } catch (error) {
-      console.error(errorMessages.cloneError, error);
+      console.error('克隆失败:', error);
+      setErrorMessage((error as Error).message || 'Unknown error');
       toast({
-        title: errorMessages.cloneError,
-        description: error instanceof Error ? error.message : errorMessages.unknownError,
+        title: t('error'),
+        description: (error as Error).message || t('voiceCloningFailed'),
         variant: "destructive",
       });
     } finally {
@@ -651,316 +788,549 @@ export default function Cloning() {
 
   return (
     <div className="min-h-screen">
+      <VoiceTitleUpdater />
       <NavBar />
       <main className="container mx-auto px-4 py-4 md:py-8 space-y-4 md:space-y-8">
-        <Card className="backdrop-blur-sm bg-background/80 border-primary/10 shadow-lg">
-          <CardHeader className="border-b border-primary/10 pb-4 md:pb-6">
-            <CardTitle className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center">
-              {t('voiceCloning')}
-            </CardTitle>
+        <Card className="backdrop-blur-sm bg-background/80 border-primary/10 shadow-lg overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-500/5 via-blue-500/5 to-pink-500/5 rounded-xl"></div>
+          <CardHeader className="border-b border-primary/10 pb-4 md:pb-6 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <CardTitle className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center">
+                {t('voiceCloning')}
+              </CardTitle>
+            </motion.div>
           </CardHeader>
-          <CardContent className="pt-4 md:pt-6">
+          <CardContent className="pt-4 md:pt-6 relative z-10">
             <div className="space-y-4 md:space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Card className="backdrop-blur-sm bg-background/80 border-primary/10 shadow-md">
-                  <CardHeader className="space-y-1 md:space-y-2">
-                    <CardTitle className="text-lg md:text-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                      {t('uploadAudio')}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3 md:space-y-4">
-                    <div className="space-y-2">
-                      <div className="grid grid-cols-2 gap-2">
-                        <RequireAuth>
-                          <Button
-                            variant="outline"
-                            onClick={() => audioInputRef.current?.click()}
-                            disabled={isCloning || isRecording}
-                            className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 h-10"
-                          >
-                            <Upload className="w-4 h-4 mr-2" />
-                            {t('uploadAudio')}
-                          </Button>
-                        </RequireAuth>
-                        <RequireAuth>
-                          <Button
-                            variant="outline"
-                            onClick={isRecording ? handleStopRecording : handleStartRecording}
-                            disabled={isCloning}
-                            className={cn(
-                              "bg-gradient-to-r text-white h-10",
-                              isRecording 
-                                ? "from-red-500 to-red-600 hover:from-red-600 hover:to-red-700"
-                                : "from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600"
-                            )}
-                          >
-                            {isRecording ? (
-                              <>
-                                <Square className="w-4 h-4 mr-2" />
-                                {t('stopRecording')}
-                              </>
-                            ) : (
-                              <>
-                                <Mic className="w-4 h-4 mr-2" />
-                                {t('record')}
-                              </>
-                            )}
-                          </Button>
-                        </RequireAuth>
-                      </div>
-                      {audioFile && (
-                        <div className="text-sm text-gray-500 bg-muted/30 p-2 rounded-lg">
-                          {t('fileSelected', { 
-                            filename: audioFile.name, 
-                            size: (audioFile.size / 1024 / 1024).toFixed(2) 
-                          })}
-                        </div>
-                      )}
-                      <input
-                        type="file"
-                        ref={audioInputRef}
-                        className="hidden"
-                        accept="audio/*"
-                        onChange={handleAudioUpload}
-                      />
-                      <Button
-                        className="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-10 text-white hover:from-blue-600 hover:via-purple-600 hover:to-pink-600"
-                        onClick={handleCloneVoice}
-                        disabled={!audioFile || isCloning || isRecording}
-                      >
-                        {isCloning ? t('cloning') : t('startCloning')}
-                      </Button>
-                      {selectedVoice && (
-                        <div className="p-2 bg-muted/30 rounded-lg">
-                          <div className="flex items-center justify-between">
-                            <p className="text-sm">{t('voiceId')}{selectedVoice.id}</p>
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => {
-                                localStorage.removeItem('clonedVoiceId');
-                                setSelectedVoice(null);
-                                toast({
-                                  title: t("clear"),
-                                  description: t("clearClonedVoice"),
-                                });
-                              }}
-                              className="text-red-500 hover:text-red-600"
-                            >
-                              {t('clear')}
-                            </Button>
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="backdrop-blur-sm bg-background/80 border-primary/10 shadow-md">
-                  <CardHeader className="space-y-1 md:space-y-2">
-                    <CardTitle className="text-lg md:text-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                      {t('instructions')}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-2 text-sm text-muted-foreground">
-                      <p>{t('instruction1')}</p>
-                      <p>{t('instruction2')}</p>
-                      <p>{t('instruction3')}</p>
-                      <p>{t('instruction4')}</p>
-                      <p>{t('instruction5')}</p>
-                      <p>{t('instruction6')}</p>
-                      <div className="mt-4 pt-4 border-t border-primary/10">
-                        <p className="text-xs text-red-500">{t('legalNotice')}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Card className="backdrop-blur-sm bg-background/80 border-primary/10 shadow-md">
-                  <CardHeader className="space-y-1 md:space-y-2">
-                    <CardTitle className="text-lg md:text-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                      {t('serviceSettings')}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3 md:space-y-4">
-                    <div className="space-y-3 md:space-y-4">
-                      <div className="space-y-1.5 md:space-y-2">
-                        <Label>{t('selectLanguage')}</Label>
-                        <Select
-                          value={selectedLanguage}
-                          onValueChange={handleLanguageChange}
-                        >
-                          <SelectTrigger className="h-10">
-                            <SelectValue />
-                          </SelectTrigger>
-                          <SelectContent className="max-h-[40vh] overflow-y-auto">
-                            <div className="px-3 py-2 sticky top-0 bg-background z-10 border-b">
-                              <input
-                                className="w-full h-8 px-2 text-sm border rounded focus:outline-none focus:ring-1 focus:ring-primary"
-                                placeholder={t('searchLanguage')}
-                                onChange={(e) => {
-                                  const searchElement = e.target.parentElement?.parentElement?.querySelectorAll('.language-item');
-                                  const searchText = e.target.value.toLowerCase();
-                                  searchElement?.forEach((item) => {
-                                    const text = item.textContent?.toLowerCase() || '';
-                                    if (text.includes(searchText)) {
-                                      (item as HTMLElement).style.display = 'block';
-                                    } else {
-                                      (item as HTMLElement).style.display = 'none';
-                                    }
-                                  });
-                                }}
-                              />
-                            </div>
-                            {MINIMAX_LANGUAGES.map((lang) => (
-                              <SelectItem key={lang.code} value={lang.code} className="language-item">
-                                {t(lang.nameKey)}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      </div>
-
-                      <div className="space-y-1.5 md:space-y-2">
-                        <Label>{t('voice')}</Label>
-                        {selectedLanguage && (
-                          <VoiceSelector
-                            languageCode={selectedLanguage}
-                            onVoiceSelect={setSelectedVoice}
-                            selectedVoiceId={selectedVoice?.id}
-                            provider="minimax"
-                            clonedVoices={clonedVoices.map(voice => ({
-                              id: voice.voiceId,
-                              provider: 'minimax',
-                              name: voice.name,
-                              gender: 'Female'
-                            }))}
-                          />
-                        )}
-                      </div>
-
-                      <div className="space-y-1.5 md:space-y-2">
-                        <Label>{t('speed')}: {speed}x</Label>
-                        <Slider
-                          value={[speed]}
-                          onValueChange={([value]) => setSpeed(value)}
-                          min={0.5}
-                          max={2}
-                          step={0.1}
-                          className="py-1"
-                        />
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="backdrop-blur-sm bg-background/80 border-primary/10 shadow-md">
-                  <CardHeader className="space-y-1 md:space-y-2">
-                    <CardTitle className="text-lg md:text-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                      {t('readText')}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3 md:space-y-4">
-                    <div className="relative">
-                      <Textarea
-                        placeholder={t('inputPlaceholder')}
-                        className="min-h-[120px] md:min-h-[200px] bg-background/70 backdrop-blur-sm border-primary/20 focus:border-primary/40 transition-all duration-300 resize-none text-sm md:text-base"
-                        value={text}
-                        onChange={(e) => handleTextChange(e.target.value)}
-                        maxLength={SERVICE_LIMITS.minimax}
-                      />
-                      <div className="absolute bottom-2 right-2 text-xs text-muted-foreground">
-                        {text.length}/{SERVICE_LIMITS.minimax.toLocaleString()} {t('characters')}
-                      </div>
-                    </div>
-                    
-                    {audioVisualizer && (
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.3 }}
-                        className="w-full"
-                      >
-                        <AudioVisualizer 
-                          audioContext={audioVisualizer.audioContext}
-                          audioSource={audioVisualizer.source}
-                          onPause={handlePause}
-                          onResume={handleResume}
-                          isPlaying={isPlaying}
-                        />
-                      </motion.div>
-                    )}
-                    
-                    <div className="flex flex-wrap gap-2">
-                      <RequireAuth>
-                        <Button 
-                          onClick={handleSpeak} 
-                          className="flex-1 h-10 text-sm bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 transition-all duration-300"
-                        >
-                          <Volume2 className="mr-2 h-4 w-4" />
-                          {t('readText')}
-                        </Button>
-                      </RequireAuth>
-
-                      {audioVisualizer && (
-                        <motion.div
-                          initial={{ scale: 0 }}
-                          animate={{ scale: 1 }}
-                          transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                        >
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4 }}
+                >
+                  <Card className="h-full backdrop-blur-sm bg-background/80 border-primary/10 shadow-md hover:shadow-lg transition-all duration-300">
+                    <CardHeader className="space-y-1 md:space-y-2 pb-3">
+                      <CardTitle className="text-lg md:text-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                        {t('uploadAudio')}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3 pt-0">
+                      <div className="space-y-2">
+                        <div className="grid grid-cols-2 gap-2">
                           <RequireAuth>
                             <Button
                               variant="outline"
-                              size="icon"
-                              onClick={isPlaying ? handlePause : handleResume}
-                              className="h-10 w-10 border-primary/20 hover:border-primary/40"
+                              onClick={() => audioInputRef.current?.click()}
+                              disabled={isCloning || isRecording}
+                              className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 h-9 shadow-sm hover:shadow-md transition-all duration-300 rounded-md"
                             >
-                              {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
+                              <Upload className="w-3.5 h-3.5 mr-1.5" />
+                              {t('uploadAudio')}
                             </Button>
                           </RequireAuth>
+                          <RequireAuth>
+                            <Button
+                              variant="outline"
+                              onClick={isRecording ? handleStopRecording : handleStartRecording}
+                              disabled={isCloning}
+                              className={cn(
+                                "text-white h-9 shadow-sm hover:shadow-md transition-all duration-300 rounded-md",
+                                isRecording 
+                                  ? "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700"
+                                  : "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600"
+                              )}
+                            >
+                              {isRecording ? (
+                                <>
+                                  <Square className="w-3.5 h-3.5 mr-1.5" />
+                                  {t('stopRecording')}
+                                </>
+                              ) : (
+                                <>
+                                  <Mic className="w-3.5 h-3.5 mr-1.5" />
+                                  {t('record')}
+                                </>
+                              )}
+                            </Button>
+                          </RequireAuth>
+                        </div>
+                        {audioFile && (
+                          <motion.div 
+                            initial={{ opacity: 0, y: 5 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="text-sm text-muted-foreground bg-muted/30 p-2 rounded-lg border border-primary/5"
+                          >
+                            {t('fileSelected', { 
+                              filename: audioFile.name, 
+                              size: (audioFile.size / 1024 / 1024).toFixed(2) 
+                            })}
+                          </motion.div>
+                        )}
+                        <input
+                          type="file"
+                          ref={audioInputRef}
+                          className="hidden"
+                          accept="audio/*"
+                          onChange={handleAudioUpload}
+                        />
+                        <motion.div
+                          whileHover={{ scale: 1.02 }}
+                          whileTap={{ scale: 0.98 }}
+                        >
+                          <Button
+                            className="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-9 text-white hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 shadow-md hover:shadow-lg transition-all duration-300 rounded-md"
+                            onClick={handleCloneVoice}
+                            disabled={!audioFile || isCloning || isRecording}
+                          >
+                            {isCloning ? (
+                              <div className="flex items-center">
+                                <div className="h-3.5 w-3.5 mr-2 border-2 border-t-transparent border-white rounded-full animate-spin"></div>
+                                {t('cloning')}
+                              </div>
+                            ) : (
+                              t('startCloning')
+                            )}
+                          </Button>
+                        </motion.div>
+                        {selectedVoice && (
+                          <motion.div 
+                            initial={{ opacity: 0, y: 5 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="p-2 bg-muted/30 rounded-lg border border-primary/5"
+                          >
+                            <div className="flex items-center justify-between">
+                              <p className="text-sm text-muted-foreground">
+                                <span className="font-medium">{t('voiceId')}</span> 
+                                <span className="ml-1 text-primary/80">{selectedVoice.id}</span>
+                              </p>
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={() => {
+                                  localStorage.removeItem('clonedVoiceId');
+                                  setSelectedVoice(null);
+                                  toast({
+                                    title: t("clear"),
+                                    description: t("clearClonedVoice"),
+                                  });
+                                }}
+                                className="h-7 px-2 text-red-500 hover:text-red-600 hover:bg-red-500/10"
+                              >
+                                {t('clear')}
+                              </Button>
+                            </div>
+                          </motion.div>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: 0.1 }}
+                >
+                  <Card className="h-full backdrop-blur-sm bg-background/80 border-primary/10 shadow-md hover:shadow-lg transition-all duration-300">
+                    <CardHeader className="space-y-1 md:space-y-2 pb-3">
+                      <CardTitle className="text-lg md:text-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                        {t('instructions')}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <div className="space-y-2 text-sm text-muted-foreground">
+                        <div className="space-y-3">
+                          <p className="pl-3 border-l-2 border-blue-500/40 py-1">{t('instruction1')}</p>
+                          <p className="pl-3 border-l-2 border-purple-500/40 py-1">{t('instruction2')}</p>
+                          <p className="pl-3 border-l-2 border-pink-500/40 py-1">{t('instruction3')}</p>
+                          <p className="pl-3 border-l-2 border-red-500/40 py-1">{t('instruction4')}</p>
+                          <p className="pl-3 border-l-2 border-orange-500/40 py-1">{t('instruction5')}</p>
+                          <p className="pl-3 border-l-2 border-emerald-500/40 py-1">{t('instruction6')}</p>
+                        </div>
+                        <div className="mt-4 pt-4 border-t border-primary/10">
+                          <p className="text-xs text-red-500">{t('legalNotice')}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: 0.2 }}
+                >
+                  <Card className="h-full backdrop-blur-sm bg-background/80 border-primary/10 shadow-md hover:shadow-lg transition-all duration-300">
+                    <CardHeader className="space-y-1 md:space-y-2 pb-3">
+                      <CardTitle className="text-lg md:text-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                        {t('serviceSettings')}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3 md:space-y-4 pt-0">
+                      <div className="space-y-3 md:space-y-4">
+                        <div className="space-y-1.5">
+                          <Label className="text-sm font-medium">{t('selectLanguage')}</Label>
+                          <Select
+                            value={selectedLanguage}
+                            onValueChange={handleLanguageChange}
+                          >
+                            <SelectTrigger className="h-9 rounded-md bg-background/70 border-primary/20 hover:border-primary/40 transition-colors duration-200">
+                              <SelectValue />
+                            </SelectTrigger>
+                            <SelectContent className="max-h-[40vh] overflow-y-auto">
+                              <div className="px-3 py-2 sticky top-0 bg-background z-10 border-b">
+                                <input
+                                  className="w-full h-8 px-2 text-sm border rounded focus:outline-none focus:ring-1 focus:ring-primary"
+                                  placeholder={t('searchLanguage')}
+                                  onChange={(e) => {
+                                    const searchElement = e.target.parentElement?.parentElement?.querySelectorAll('.language-item');
+                                    const searchText = e.target.value.toLowerCase();
+                                    searchElement?.forEach((item) => {
+                                      const text = item.textContent?.toLowerCase() || '';
+                                      if (text.includes(searchText)) {
+                                        (item as HTMLElement).style.display = 'block';
+                                      } else {
+                                        (item as HTMLElement).style.display = 'none';
+                                      }
+                                    });
+                                  }}
+                                />
+                              </div>
+                              {MINIMAX_LANGUAGES.map((lang) => (
+                                <SelectItem key={lang.code} value={lang.code} className="language-item">
+                                  {t(lang.nameKey)}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                        </div>
+
+                        <div className="space-y-1.5">
+                          <Label className="text-sm font-medium">{t('voice')}</Label>
+                          {selectedLanguage && (
+                            <VoiceSelector
+                              languageCode={selectedLanguage}
+                              onVoiceSelect={setSelectedVoice}
+                              selectedVoiceId={selectedVoice?.id}
+                              provider="minimax"
+                              clonedVoices={clonedVoices.map(voice => ({
+                                id: voice.voiceId,
+                                provider: 'minimax',
+                                name: voice.name,
+                                gender: 'Female'
+                              }))}
+                            />
+                          )}
+                        </div>
+
+                        <div className="space-y-1.5">
+                          <div className="flex justify-between">
+                            <Label>{t('speed')}</Label>
+                            <span className="text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">{speed}x</span>
+                          </div>
+                          <Slider
+                            value={[speed]}
+                            onValueChange={([value]) => setSpeed(value)}
+                            min={0.5}
+                            max={2}
+                            step={0.1}
+                            className="py-2"
+                            defaultValue={[1]}
+                          />
+                        </div>
+
+                        <div className="space-y-1.5 md:space-y-2">
+                          <div className="flex justify-between">
+                            <Label>{t('volume')}</Label>
+                            <span className="text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">{vol}</span>
+                          </div>
+                          <Slider
+                            value={[vol]}
+                            onValueChange={([value]) => setVol(value)}
+                            min={0.1}
+                            max={10}
+                            step={0.1}
+                            className="py-2"
+                            defaultValue={[1]}
+                          />
+                        </div>
+
+                        <div className="space-y-1.5 md:space-y-2">
+                          <div className="flex justify-between">
+                            <Label>{t('pitch')}</Label>
+                            <span className="text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">{pitch}</span>
+                          </div>
+                          <Slider
+                            value={[pitch]}
+                            onValueChange={([value]) => setPitch(value)}
+                            min={-12}
+                            max={12}
+                            step={1}
+                            className="py-2"
+                            defaultValue={[0]}
+                          />
+                        </div>
+
+                        <div className="space-y-1.5 md:space-y-2">
+                          <Label>{t('emotion')}</Label>
+                          <Select
+                            value={emotion || "none"}
+                            onValueChange={(value) => {
+                              setEmotion(value === "none" ? undefined : value as EmotionType);
+                            }}
+                          >
+                            <SelectTrigger className="h-9 md:h-10 rounded-md bg-background/60 border-primary/20 hover:border-primary/40 transition-colors duration-200 focus:ring-1 focus:ring-primary/30">
+                              <SelectValue placeholder={t('selectEmotionOptional')} />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="none">{t('noEmotion')}</SelectItem>
+                              {(['happy', 'sad', 'angry', 'fearful', 'disgusted', 'surprised', 'neutral'] as EmotionType[]).map((emotion) => (
+                                <SelectItem key={emotion} value={emotion}>
+                                  {t(`emotion_${emotion}`)}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                        </div>
+
+                        <div className="space-y-3 pt-2 border-t border-primary/10">
+                          <h3 className="text-sm font-medium">{t('advancedAudioOptions')}</h3>
+                          
+                          <div className="space-y-1.5 md:space-y-2">
+                            <Label>{t('sampleRate')}</Label>
+                            <Select
+                              value={sampleRate.toString()}
+                              onValueChange={(value) => setSampleRate(parseInt(value))}
+                            >
+                              <SelectTrigger className="h-9 md:h-10 rounded-md bg-background/60 border-primary/20 hover:border-primary/40 transition-colors duration-200 focus:ring-1 focus:ring-primary/30">
+                                <SelectValue />
+                              </SelectTrigger>
+                              <SelectContent>
+                                {SAMPLE_RATES.map((rate) => (
+                                  <SelectItem key={rate} value={rate.toString()}>
+                                    {rate.toLocaleString()}
+                                  </SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                          </div>
+                          
+                          <div className="space-y-1.5 md:space-y-2">
+                            <Label>{t('bitrate')}</Label>
+                            <Select
+                              value={bitrate.toString()}
+                              onValueChange={(value) => setBitrate(parseInt(value))}
+                            >
+                              <SelectTrigger className="h-9 md:h-10 rounded-md bg-background/60 border-primary/20 hover:border-primary/40 transition-colors duration-200 focus:ring-1 focus:ring-primary/30">
+                                <SelectValue />
+                              </SelectTrigger>
+                              <SelectContent>
+                                {BITRATES.map((rate) => (
+                                  <SelectItem key={rate} value={rate.toString()}>
+                                    {rate === 32000 ? "32 kbps" : 
+                                     rate === 64000 ? "64 kbps" : 
+                                     rate === 128000 ? "128 kbps" : 
+                                     "256 kbps"}
+                                  </SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                          </div>
+                          
+                          <div className="space-y-1.5 md:space-y-2">
+                            <Label>{t('channel')}</Label>
+                            <Select
+                              value={channel.toString()}
+                              onValueChange={(value) => setChannel(parseInt(value))}
+                            >
+                              <SelectTrigger className="h-9 md:h-10 rounded-md bg-background/60 border-primary/20 hover:border-primary/40 transition-colors duration-200 focus:ring-1 focus:ring-primary/30">
+                                <SelectValue />
+                              </SelectTrigger>
+                              <SelectContent>
+                                <SelectItem value="1">{t('mono')}</SelectItem>
+                                <SelectItem value="2">{t('stereo')}</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: 0.3 }}
+                >
+                  <Card className="h-full backdrop-blur-sm bg-background/80 border-primary/10 shadow-md hover:shadow-lg transition-all duration-300">
+                    <CardHeader className="space-y-1 md:space-y-2 pb-3">
+                      <CardTitle className="text-lg md:text-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                        {t('readText')}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3 md:space-y-4 pt-0">
+                      <div className="relative">
+                        <Textarea
+                          placeholder={t('inputPlaceholder')}
+                          className="min-h-[120px] md:min-h-[180px] bg-background/70 backdrop-blur-sm border-primary/20 focus:border-primary/40 rounded-md transition-all duration-300 resize-none text-sm md:text-base"
+                          value={text}
+                          onChange={(e) => handleTextChange(e.target.value)}
+                          maxLength={SERVICE_LIMITS.minimax}
+                        />
+                        <div className="absolute bottom-2 right-2 text-xs font-medium px-1.5 py-0.5 rounded-full bg-primary/10 text-primary/80">
+                          {text.length}/{SERVICE_LIMITS.minimax.toLocaleString()}
+                        </div>
+                      </div>
+                      
+                      {audioVisualizer && (
+                        <motion.div
+                          initial={{ opacity: 0, scale: 0.95 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.3 }}
+                          className="w-full bg-gradient-to-r from-blue-500/5 to-purple-500/5 p-2 rounded-lg border border-primary/10"
+                        >
+                          <AudioVisualizer 
+                            audioContext={audioVisualizer.audioContext}
+                            audioSource={audioVisualizer.source}
+                            onPause={handlePause}
+                            onResume={handleResume}
+                            isPlaying={isPlaying}
+                          />
                         </motion.div>
                       )}
+                      
+                      <div className="flex flex-wrap gap-2">
+                        <RequireAuth>
+                          <Button 
+                            onClick={handleSpeak} 
+                            className="flex-1 h-9 text-sm bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 transition-all duration-300 rounded-md shadow-sm hover:shadow-md"
+                            disabled={isProcessing}
+                          >
+                            {isProcessing ? (
+                              <div className="flex items-center">
+                                <div className="h-3.5 w-3.5 mr-2 border-2 border-t-transparent border-white rounded-full animate-spin"></div>
+                                {t('processing')}
+                              </div>
+                            ) : (
+                              <>
+                                <Volume2 className="mr-1.5 h-3.5 w-3.5" />
+                                {t('readText')}
+                              </>
+                            )}
+                          </Button>
+                        </RequireAuth>
 
-                      <RequireAuth>
-                        <Button 
-                          variant="outline" 
-                          onClick={handleDownload}
-                          className="flex-1 h-10 text-sm border-primary/20 hover:border-primary/40 hover:bg-primary/5"
-                        >
-                          <Download className="mr-2 h-4 w-4" />
-                          {t('downloadAudio')}
-                        </Button>
-                      </RequireAuth>
+                        {audioVisualizer && (
+                          <motion.div
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                          >
+                            <RequireAuth>
+                              <Button
+                                variant="outline"
+                                size="icon"
+                                onClick={isPlaying ? handlePause : handleResume}
+                                className="h-9 w-9 border-primary/20 hover:border-primary/40 rounded-md shadow-sm"
+                              >
+                                {isPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
+                              </Button>
+                            </RequireAuth>
+                          </motion.div>
+                        )}
 
-                      <RequireAuth>
-                        <Button
-                          variant="outline"
-                          className="flex-1 h-10 text-sm border-primary/20 hover:border-primary/40 hover:bg-primary/5"
-                          asChild
-                        >
-                          <label>
-                            <Upload className="mr-2 h-4 w-4" />
-                            {t('uploadFile')}
-                            <input
-                              type="file"
-                              className="hidden"
-                              accept=".txt,.md"
-                              onChange={handleFileUpload}
-                            />
-                          </label>
-                        </Button>
-                      </RequireAuth>
-                    </div>
-                  </CardContent>
-                </Card>
+                        <RequireAuth>
+                          <Button 
+                            variant="outline" 
+                            onClick={handleDownload}
+                            className="flex-1 h-9 text-sm border-primary/20 hover:border-primary/40 hover:bg-primary/5 rounded-md shadow-sm"
+                          >
+                            <Download className="mr-1.5 h-3.5 w-3.5" />
+                            {t('downloadAudio')}
+                          </Button>
+                        </RequireAuth>
+
+                        <RequireAuth>
+                          <Button
+                            variant="outline"
+                            className="flex-1 h-9 text-sm border-primary/20 hover:border-primary/40 hover:bg-primary/5 rounded-md shadow-sm"
+                            asChild
+                          >
+                            <label>
+                              <Upload className="mr-1.5 h-3.5 w-3.5" />
+                              {t('uploadFile')}
+                              <input
+                                type="file"
+                                className="hidden"
+                                accept=".txt,.md"
+                                onChange={handleFileUpload}
+                              />
+                            </label>
+                          </Button>
+                        </RequireAuth>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               </div>
             </div>
           </CardContent>
         </Card>
       </main>
+
+      {/* 返回顶部按钮 */}
+      <motion.div 
+        className="fixed bottom-24 right-6 z-[100]"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.1 }}
+      >
+        <button
+          onClick={scrollToTop}
+          className="flex items-center justify-center w-14 h-14 rounded-full bg-background/80 backdrop-blur-sm border border-gray-200 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 dark:focus:ring-gray-700"
+          title={t('back_to_top')}
+        >
+          <ChevronUp className="w-6 h-6 text-gray-600 dark:text-gray-400" />
+        </button>
+      </motion.div>
+
+      {/* Discord 悬浮按钮 */}
+      <motion.div 
+        className="fixed bottom-6 right-6 z-[100]"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ type: "spring", stiffness: 260, damping: 20 }}
+      >
+        <a 
+          href="https://discord.gg/966GMKhQhs" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex items-center justify-center w-14 h-14 rounded-full bg-background/80 backdrop-blur-sm border border-gray-200 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 dark:focus:ring-gray-700"
+          title={t('join_discord_community')}
+        >
+          <img 
+            src="/images/discord.png" 
+            alt="Discord" 
+            className="w-11 h-11 object-contain"
+          />
+        </a>
+      </motion.div>
+
+      {/* 额度不足弹窗 */}
+      <InsufficientCreditsDialog
+        open={showInsufficientCreditsDialog}
+        onOpenChange={setShowInsufficientCreditsDialog}
+        type="clone"
+      />
     </div>
   );
 }

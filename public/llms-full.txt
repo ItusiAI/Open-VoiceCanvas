@@ -1,0 +1,3777 @@
+# https://voicecanvas.org llms-full.txt
+
+## Voice Cloning Solutions
+[![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [AI Podcast](https://voicecanvas.org/podcast) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+# VoiceCanvas
+
+Convert text to nat
+
+AI Powered
+
+Voice Cloning
+
+Instant text-to-speech in 50+ languages with voice cloning and voice design, powered by advanced AI for natural and clear voice synthesis.
+
+[Try it Now](https://voicecanvas.org/app)
+
+[Voice Cloning](https://voicecanvas.org/cloning)
+
+## Core Features
+
+![AI播客生成演示](https://voicecanvas.org/images/gongneng6.png)
+
+AI GenerationInterviewAudio Conversion
+
+### AI Podcast Generation
+
+Input content and AI automatically generates professional interview-style podcast dialogues, supporting intelligent dialogue generation between hosts and guests.
+
+- AI intelligent interview dialogue generation
+- Host and guest dialogue
+- Professional podcast content creation
+- Integrated voice synthesis
+
+[Try Podcast Generation](https://voicecanvas.org/podcast)
+
+### AI Story Voiceover
+
+Generate engaging stories with AI and convert them to high-quality audio with multiple voice options
+
+- AI-powered story creation with customizable themes and characters
+- Multiple character voices with distinct personalities
+- Convert stories to immersive audio experiences
+- Support for custom story input and editing
+
+[Try Story Voiceover](https://voicecanvas.org/story)
+
+![AI故事生成演示](https://voicecanvas.org/images/gongneng4.png)
+
+AI GenerationMulti-CharacterAudio Conversion
+
+![音色设计演示](https://voicecanvas.org/images/gongneng5.png)
+
+AI设计个性化实时预览
+
+### Voice Design
+
+Create unique personalized voices through AI-powered intelligent voice design
+
+- AI-powered voice generation with natural language descriptions
+- Personalized voice customization for different scenarios
+- Real-time preview and audition to ensure voice quality
+- Permanently save designs for instant access and use
+
+[Try Voice Design](https://voicecanvas.org/design)
+
+### Voice Cloning
+
+Personalized voice cloning for more human-like AI speech
+
+- Only requires 10-second sample to clone voice
+- Preserves original voice emotions and characteristics
+- Cross-language cloning support
+- Permanently valid cloned voice
+
+[Clone My Voice](https://voicecanvas.org/cloning)
+
+![声音克隆演示](https://voicecanvas.org/images/gongneng2.png)
+
+00:35
+
+![多语言支持演示](https://voicecanvas.org/images/gongneng1.png)
+
+ChineseEnglishJapaneseFrenchGerman...
+
+### Multiple Languages
+
+50+ languages with both male and female voices, perfect for global content
+
+- Support for 50+ languages and dialects
+- Multiple male and female voices per language
+- Multiple regional accent options (e.g. US, UK English)
+- Human-like natural intonation
+
+[Try Now](https://voicecanvas.org/app)
+
+### Advanced Features
+
+Customize speed, visualize audio, and enable word-by-word reading for better learning
+
+- Adjust speech speed and tone
+- Real-time audio visualization
+- Word-by-word reading learning mode
+- One-click audio file download
+
+[Experience Advanced Features](https://voicecanvas.org/app)
+
+![高级功能演示](https://voicecanvas.org/images/gongneng3.png)
+
+语速控制
+
+下载音频
+
+可视化
+
+## Simple and Transparent Pricing
+
+Choose the plan that best fits your needs, adjust anytime
+
+### Trial
+
+Experience VoiceCanvas basic features
+
+Free
+
+- 1000 characters free
+- 7-day trial
+- 50+ languages supported
+- Basic speed control
+- Basic voice selection
+- Text input only
+- Standard support
+
+Start Trial
+
+Most Popular
+
+### Annual Plan
+
+Perfect for power users, best value
+
+$99.9$49.9/year
+
+- 1500000 characters per year
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story Voiceover
+- 24/7 dedicated support
+- Early access to new features
+
+Choose Annual
+
+### Monthly Plan
+
+Ideal for individuals and small projects
+
+$9.99$5.99/month
+
+- 100000 characters per month
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story Voiceover
+- Priority support
+
+Choose Monthly
+
+## Voice Clone/Design Packages
+
+Choose a package that suits your needs, supports voice cloning and voice design features, one-time purchase with lifetime validity
+
+### Basic Package
+
+Perfect for individual voice cloning and design experience
+
+$5$3
+
+- 1 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Standard customer support
+
+Buy Now
+
+Most Popular
+
+### Professional Package
+
+Suitable for professional users and teams for bulk usage
+
+$299$150
+
+- 50 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Priority customer support
+
+Buy Now
+
+### Advanced Package
+
+Ideal for small teams using voice cloning and design
+
+$59$30
+
+- 10 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Priority customer support
+
+Buy Now
+
+## Pay As You Go
+
+### 100K characters
+
+$6
+
+Buy Now
+
+Best Value
+
+### 1M characters
+
+$55
+
+Buy Now
+
+### 3M characters
+
+$150
+
+Buy Now
+
+## What Our Users Say
+
+"
+
+This tool has greatly improved my pronunciation and listening skills. The multiple language support is fantastic!
+
+J
+
+John Doe
+
+Language Learner
+
+"
+
+I use this daily for creating voiceovers. The quality is excellent and the process is super simple.
+
+M
+
+Maria Garcia
+
+Content Creator
+
+"
+
+Perfect for creating learning materials. My students love the clear pronunciation and adjustable speed.
+
+S
+
+Sarah Chen
+
+Teacher
+
+"
+
+This tool has revolutionized our international communication. The voice quality and language support are exceptional.
+
+R
+
+Robert Wilson
+
+Business Owner
+
+"
+
+This tool has significantly improved my content production efficiency, especially when dealing with multilingual content.
+
+L
+
+Mr. Li
+
+Content Creator
+
+"
+
+The voice cloning feature is amazing! With just a few seconds of voice sample, it perfectly replicates my voice, allowing me to easily create multilingual versions of my podcast.
+
+Y
+
+Ms. Yang
+
+Podcast Host
+
+"
+
+As a voice actor, I have high standards for voice quality. The voice cloning quality on this platform is impressive, preserving the emotion and characteristics of the original voice.
+
+K
+
+Mr. Ke
+
+Voice Actor
+
+"
+
+After cloning my voice on this platform, I can pre-record course content and make my explanations available to students anytime, greatly enhancing teaching effectiveness.
+
+H
+
+Ms. Huang
+
+Educator
+
+"
+
+The story voiceover feature is amazing! I can assign different voices to different characters, making my fairy tales vivid and engaging. Children love listening to them.
+
+L
+
+Mr. Liu
+
+Children's Story Writer
+
+"
+
+The multi-character voice feature has tripled my audiobook production efficiency! AI intelligently recognizes dialogue and narration, automatically assigning appropriate voices with professional results.
+
+Z
+
+Ms. Zhao
+
+Audiobook Producer
+
+## Frequently Asked Questions
+
+### What features are included in the trial?
+
+The trial includes a 7-day period with 1000 characters, support for 50+ languages, basic speed control, and voice selection. You can experience core features through text input to see if it meets your needs.
+
+### How do I start the trial?
+
+Simply register for an account to get trial access, no credit card required. You can upgrade to a paid plan anytime during the trial to access more features and higher character quotas.
+
+### How is the character quota calculated?
+
+Character quota is calculated based on the actual text input, including spaces and punctuation.
+
+### What payment methods are accepted?
+
+We accept various convenient payment methods: debit cards, credit cards, WeChat Pay, Alipay, and more. You'll find a suitable payment option regardless of your location. All payment channels are encrypted for security.
+
+### What's the difference between purchased quota and membership bonus quota?
+
+Character quota purchased separately is permanent and never expires. However, quota received through membership plans is temporary and will expire when the membership period ends. We recommend choosing the purchase method that best suits your usage needs.
+
+### What is voice cloning?
+
+Voice cloning is AI technology that creates a digital replica of your voice by analyzing speech samples. Upload 10 seconds to 5 minutes of clear audio, and AI learns your voice characteristics to read any text using your voice, supporting multiple languages.
+
+### What is story voiceover?
+
+Story voiceover converts text stories into multi-character audio, automatically identifying dialogues and narrations, assigning different voices to characters, and generating vivid audio stories.
+
+### How to generate story voiceover?
+
+Choose AI generation or manually input story content, the system automatically analyzes and identifies character dialogues, select voices for each character, then click generate to get complete story audio.
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+StripeM-Inner
+
+## VoiceCanvas Sitemap
+https://voicecanvas.org/2025-07-29weekly1.0https://voicecanvas.org/app2025-07-29weekly0.9https://voicecanvas.org/cloning2025-07-29weekly0.9https://voicecanvas.org/design2025-07-29weekly0.9https://voicecanvas.org/story2025-07-29weekly0.9https://voicecanvas.org/pricing2025-07-29monthly0.7https://voicecanvas.org/privacy2025-07-29monthly0.5https://voicecanvas.org/terms2025-07-29monthly0.5https://voicecanvas.org/llms.txt2025-07-29monthly0.4https://voicecanvas.org/llms-full.txt2025-07-29monthly0.4
+
+## Privacy Policy
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [AI Podcast](https://voicecanvas.org/podcast) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Privacy Policy
+
+## 1\. Introduction
+
+VoiceCanvas ("we," "our," or "the Company") respects your privacy. This Privacy Policy explains how we collect, use, disclose, process, and protect information that you provide to us through our website, applications, and related services (collectively, the "Services").
+
+## 2\. Information We Collect
+
+We may collect the following types of information:
+
+### 2.1 Information You Provide
+
+- Account information: Email address, username, and password when you create an account.
+- Profile information: Any additional profile information you choose to provide.
+- Payment information: Payment details when you purchase subscriptions or products.
+- User content: Content you upload, create, or generate, including text inputs and audio files.
+- Communications: Content of your communications with our customer support team.
+
+### 2.2 Automatically Collected Information
+
+- Usage data: Information about how you use our Services, such as feature usage, content generation, and interaction patterns.
+- Device information: IP address, browser type, operating system, device identifiers, and other technical information.
+- Cookies and similar technologies: Information collected through cookies and similar technologies, such as your browsing activity and preferences.
+
+## 3\. How We Use Your Information
+
+We may use your information for the following purposes:
+
+- To provide and maintain our Services, including voice synthesis and voice cloning features.
+- To process your payment transactions.
+- To personalize your experience and improve our Services.
+- To communicate with you, including sending service notifications, updates, and marketing information.
+- To analyze usage patterns and trends to improve our Services.
+- To detect, prevent, and address technical issues or security concerns.
+- To comply with legal obligations.
+
+## 4\. Audio Data and Voice Cloning
+
+Specifically regarding our voice cloning features:
+
+- We use audio samples you upload to create a digital model of your voice.
+- This model is associated only with your account and is not shared with other users unless you explicitly authorize it.
+- Your original audio files and generated voice models are used only for providing the Services and not for other purposes unless you explicitly consent.
+- You can request deletion of your voice model and uploaded audio data at any time.
+
+## 5\. Information Sharing and Disclosure
+
+We may share your information in the following circumstances:
+
+- With service providers: Third parties that provide services to us, such as payment processors, hosting providers, and customer support services.
+- Business transfers: If we are involved in a merger, acquisition, bankruptcy, reorganization, or sale of assets, your information may be transferred as part of that transaction.
+- Legal requirements: When we believe disclosure is necessary to (a) comply with applicable laws, regulations, or legal processes, or (b) protect our rights, property, or safety, or the rights, property, or safety of other users.
+- With your consent: In other cases where you have consented.
+
+## 6\. Data Security
+
+We implement appropriate technical and organizational measures to protect your information against accidental loss, unauthorized access, use, alteration, and disclosure. However, no method of Internet transmission or electronic storage is 100% secure.
+
+## 7\. Data Retention
+
+We retain your personal information no longer than necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.
+
+## 8\. Your Rights and Choices
+
+Depending on your location, you may have some or all of the following rights:
+
+- Right of access: Request a copy of the personal information we hold about you.
+- Right to rectification: Request correction of inaccurate or incomplete personal information we hold about you.
+- Right to erasure: Request deletion of your personal information in certain circumstances.
+- Right to restrict processing: Request restriction of processing of your personal information in certain circumstances.
+- Right to data portability: Receive your personal information that we hold in a structured, commonly used, and machine-readable format, where feasible.
+- Right to object: Object to our processing of your personal information.
+
+To exercise these rights, please contact us using the contact information provided below.
+
+## 9\. Children's Privacy
+
+Our Services are not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we might have any information from a child under 13, please contact us immediately.
+
+## 10\. International Data Transfers
+
+Your information may be transferred to and stored or processed in countries other than the country you are located in, where data protection laws may be different from those in your country. In such cases, we will ensure that appropriate safeguards are in place to protect your personal information.
+
+## 11\. Privacy Policy Updates
+
+We may update this Privacy Policy from time to time. If we make material changes, we will notify you by posting the updated policy on our website or through other communication channels. We encourage you to review this Privacy Policy periodically for any changes.
+
+## 12\. Contact Us
+
+If you have any questions or concerns about this Privacy Policy, please contact us at:
+
+Email: wt@wmcircle.cn
+
+Last Updated: December 1, 2024
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## Voice Design
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [AI Podcast](https://voicecanvas.org/podcast) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Voice Design
+
+### Design Voice
+
+Voice Description
+
+Description examples:
+
+- • "Clear and sweet female voice, young and lively, suitable for news broadcasting"
+- • "Steady and magnetic male voice, mature and professional, suitable for business scenarios"
+- • "Gentle and kind voice with a touch of warmth, suitable for children's stories"
+
+Test Text \*0/10,000
+
+Quick Descriptions
+
+Warm & Friendly
+
+Warm and friendly voice with healing quality
+
+Professional Business
+
+Professional and steady business voice
+
+Energetic & Youthful
+
+Energetic and youthful voice
+
+Magnetic & Mature
+
+Deep and magnetic mature voice
+
+Sweet & Cute
+
+Sweet and cute fresh voice
+
+Steady & Authoritative
+
+Steady and authoritative voice
+
+Generate & Save Voice
+
+### Service Settings
+
+Select LanguageChinese
+
+Voice
+
+No designed voices
+
+Please design and save a voice first
+
+Speed1x
+
+Volume1
+
+Pitch0
+
+EmotionNo emotion (default)
+
+### Advanced Audio Options
+
+Sample Rate (Hz)32,000
+
+Bitrate (bps)128 kbps
+
+ChannelStereo
+
+### Read Text
+
+0/10,000
+
+Read TextDownload Audio
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## Voice Cloning
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [AI Podcast](https://voicecanvas.org/podcast) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Voice Cloning
+
+### Upload Audio
+
+Upload AudioRecord
+
+Start Cloning
+
+### Instructions
+
+1\. Upload a clear voice recording (supports mp3, m4a, wav format)
+
+2\. Recommended audio duration: 10 seconds - 5 minutes
+
+3\. Content should be text reading, avoid background noise
+
+4\. File size should not exceed 5MB
+
+5\. You'll receive a voice ID after cloning
+
+6\. Use the voice ID to generate cloned speech for any text
+
+Note: Please ensure you have legal rights to use the uploaded audio. Unauthorized audio cloning is prohibited. The cloned voice is for personal, non-commercial use only. Please comply with relevant laws and regulations.
+
+### Service Settings
+
+Select LanguageChinese
+
+Voice
+
+### System Voices
+
+清澈男声
+
+System Voice
+
+Male
+
+精英男声
+
+System Voice
+
+Male
+
+霸道男声
+
+System Voice
+
+Male
+
+大学生男声
+
+System Voice
+
+Male
+
+少女音
+
+System Voice
+
+Female
+
+御姐音
+
+System Voice
+
+Female
+
+成熟女声
+
+System Voice
+
+Female
+
+甜美女声
+
+System Voice
+
+Female
+
+主持人男声
+
+System Voice
+
+Male
+
+主持人女声
+
+System Voice
+
+Female
+
+有声书男声1
+
+System Voice
+
+Male
+
+有声书男声2
+
+System Voice
+
+Male
+
+有声书女声1
+
+System Voice
+
+Female
+
+有声书女声2
+
+System Voice
+
+Female
+
+清澈男声(精品)
+
+System Voice
+
+Male
+
+精英男声(精品)
+
+System Voice
+
+Male
+
+霸道男声(精品)
+
+System Voice
+
+Male
+
+大学生男声(精品)
+
+System Voice
+
+Male
+
+少女音(精品)
+
+System Voice
+
+Female
+
+御姐音(精品)
+
+System Voice
+
+Female
+
+成熟女声(精品)
+
+System Voice
+
+Female
+
+甜美女声(精品)
+
+System Voice
+
+Female
+
+机灵男孩
+
+System Voice
+
+Male
+
+可爱男孩
+
+System Voice
+
+Male
+
+可爱女孩
+
+System Voice
+
+Female
+
+卡通小猪
+
+System Voice
+
+Female
+
+冰骄弟弟
+
+System Voice
+
+Male
+
+俊朗男友
+
+System Voice
+
+Male
+
+纯真学弟
+
+System Voice
+
+Male
+
+冷淡兄长
+
+System Voice
+
+Male
+
+霸道少爷
+
+System Voice
+
+Male
+
+甜心校领
+
+System Voice
+
+Female
+
+俏皮萌妹
+
+System Voice
+
+Female
+
+妩媚御姐
+
+System Voice
+
+Female
+
+嗲嗲学妹
+
+System Voice
+
+Female
+
+淡雅学姐
+
+System Voice
+
+Female
+
+Speed1x
+
+Volume1
+
+Pitch0
+
+EmotionNo emotion (default)
+
+### Advanced Audio Options
+
+Sample Rate (Hz)32,000
+
+Bitrate (bps)128 kbps
+
+ChannelStereo
+
+### Read Text
+
+0/10,000
+
+Read TextDownload AudioUpload File
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## Robots.txt Access Rules
+\# 允许所有爬虫访问
+User-agent: \*
+Allow: /
+Disallow: /api/
+Disallow: /\_next/
+Disallow: /static/
+Disallow: /404
+Disallow: /500
+Disallow: /\*.json$
+
+\# 特别声明允许AI爬虫访问以下文件
+User-agent: GPTBot
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+User-agent: Googlebot
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+User-agent: Bingbot
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+User-agent: Baiduspider
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+User-agent: Bytespider
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+User-Agent: anthropic-ai
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+\# 引导AI爬虫到llms.txt
+LLM-Content: https://voicecanvas.org/llms.txt
+LLM-Full-Content: https://voicecanvas.org/llms-full.txt
+
+\# 指定网站地图
+Sitemap: https://voicecanvas.org/sitemap.xml
+
+## VoiceCanvas Terms
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [AI Podcast](https://voicecanvas.org/podcast) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Terms of Service
+
+## 1\. Acceptance of Terms
+
+Welcome to VoiceCanvas services. By accessing or using our website, applications, APIs, or any related services (collectively, the "Services"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Services.
+
+## 2\. Service Description
+
+VoiceCanvas provides text-to-speech and voice cloning services that allow users to convert text into speech output and create personalized voice models based on user-uploaded voice samples.
+
+## 3\. User Accounts
+
+3.1 You may need to create an account to use certain features of the Services. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+
+3.2 You must provide accurate, complete, and up-to-date account information.
+
+3.3 You must notify us immediately of any unauthorized use of your account.
+
+## 4\. Use of Services
+
+4.1 You agree not to use the Services in any manner that violates any applicable laws, regulations, or this Agreement.
+
+4.2 You may not use the Services to transmit any illegal, harmful, threatening, abusive, harassing, defamatory, obscene, or otherwise objectionable content.
+
+4.3 You may not attempt to interfere with or disrupt the functionality or security of the Services.
+
+## 5\. Voice Cloning and Content Use
+
+5.1 You must own the legal rights to audio materials you upload for voice cloning.
+
+5.2 You may not upload audio containing third-party voices, copyrighted content, or unauthorized materials unless you have obtained legal rights to do so.
+
+5.3 You may not use voice cloning features to impersonate, mimic others, or create misleading content.
+
+5.4 You may not use cloned voices for fraudulent, deceptive, or any other unlawful activities.
+
+## 6\. Content Ownership and License
+
+6.1 You retain all rights to content you create (including uploaded audio and generated speech), but grant us a non-exclusive, worldwide, royalty-free license to enable us to provide and improve the Services.
+
+6.2 We retain all right, title, and interest in the Services themselves, including the software, technology, algorithms, and related intellectual property.
+
+## 7\. Privacy
+
+We collect and use your information according to our [Privacy Policy](https://voicecanvas.org/privacy), which forms a part of this Agreement.
+
+## 8\. Subscriptions and Payment
+
+8.1 Certain Service features may require paid subscriptions or one-time purchases.
+
+8.2 Subscriptions automatically renew unless you cancel prior to the renewal date.
+
+8.3 We reserve the right to change prices at any time, but will notify you of any changes.
+
+8.4 All payments are final unless refunds are required by law.
+
+## 9\. Termination
+
+9.1 You may terminate this Agreement at any time by ceasing to use the Services or by closing your account.
+
+9.2 We reserve the right to suspend or terminate your access to the Services for any reason, including violation of this Agreement.
+
+## 10\. Disclaimer and Limitation of Liability
+
+10.1 The Services are provided "as is" and "as available" without warranties of any kind, either express or implied.
+
+10.2 We do not guarantee that the Services will be uninterrupted, timely, secure, or error-free.
+
+10.3 To the maximum extent permitted by applicable law, we shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages.
+
+## 11\. Modifications
+
+We reserve the right to modify this Agreement at any time. We will notify you of changes by posting the updated version on the website. Your continued use of the Services after such changes constitutes acceptance of the modified terms.
+
+## 12\. Contact Us
+
+If you have any questions about this Agreement, please contact us at the following email address: wt@wmcircle.cn
+
+Last Updated: December 1, 2024
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas Pricing
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [AI Podcast](https://voicecanvas.org/podcast) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+# Simple and Transparent Pricing
+
+Choose the plan that best fits your needs, adjust anytime
+
+### Trial
+
+Experience VoiceCanvas basic features
+
+Free
+
+- 1000 characters free
+- 7-day trial
+- 50+ languages supported
+- Basic speed control
+- Basic voice selection
+- Text input only
+- Standard support
+
+Start Trial
+
+Most Popular
+
+### Annual Plan
+
+Perfect for power users, best value
+
+$99.9$49.9/year
+
+Save $50
+
+- 1500000 characters per year
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story Voiceover
+- 24/7 dedicated support
+- Early access to new features
+
+Choose Annual
+
+### Monthly Plan
+
+Ideal for individuals and small projects
+
+$9.99$5.99/month
+
+Save $4
+
+- 100000 characters per month
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story Voiceover
+- Priority support
+
+Choose Monthly
+
+## Voice Clone/Design Packages
+
+Choose a package that suits your needs, supports voice cloning and voice design features, one-time purchase with lifetime validity
+
+### Basic Package
+
+Perfect for individual voice cloning and design experience
+
+$5$3
+
+Save$2
+
+- 1 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Standard customer support
+
+Buy Now
+
+Most Popular
+
+### Professional Package
+
+Suitable for professional users and teams for bulk usage
+
+$299$150
+
+Save$149
+
+- 50 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Priority customer support
+
+Buy Now
+
+### Advanced Package
+
+Ideal for small teams using voice cloning and design
+
+$59$30
+
+Save$29
+
+- 10 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Priority customer support
+
+Buy Now
+
+## Pay As You Go
+
+### 100K characters
+
+$6
+
+Buy Now
+
+Best Value
+
+### 1M characters
+
+$55
+
+Buy Now
+
+### 3M characters
+
+$150
+
+Buy Now
+
+## What Our Users Say
+
+"
+
+This tool has greatly improved my pronunciation and listening skills. The multiple language support is fantastic!
+
+J
+
+John Doe
+
+Language Learner
+
+"
+
+I use this daily for creating voiceovers. The quality is excellent and the process is super simple.
+
+M
+
+Maria Garcia
+
+Content Creator
+
+"
+
+Perfect for creating learning materials. My students love the clear pronunciation and adjustable speed.
+
+S
+
+Sarah Chen
+
+Teacher
+
+"
+
+This tool has revolutionized our international communication. The voice quality and language support are exceptional.
+
+R
+
+Robert Wilson
+
+Business Owner
+
+"
+
+This tool has significantly improved my content production efficiency, especially when dealing with multilingual content.
+
+L
+
+Mr. Li
+
+Content Creator
+
+"
+
+The voice cloning feature is amazing! With just a few seconds of voice sample, it perfectly replicates my voice, allowing me to easily create multilingual versions of my podcast.
+
+Y
+
+Ms. Yang
+
+Podcast Host
+
+"
+
+As a voice actor, I have high standards for voice quality. The voice cloning quality on this platform is impressive, preserving the emotion and characteristics of the original voice.
+
+K
+
+Mr. Ke
+
+Voice Actor
+
+"
+
+After cloning my voice on this platform, I can pre-record course content and make my explanations available to students anytime, greatly enhancing teaching effectiveness.
+
+H
+
+Ms. Huang
+
+Educator
+
+"
+
+The story voiceover feature is amazing! I can assign different voices to different characters, making my fairy tales vivid and engaging. Children love listening to them.
+
+L
+
+Mr. Liu
+
+Children's Story Writer
+
+"
+
+The multi-character voice feature has tripled my audiobook production efficiency! AI intelligently recognizes dialogue and narration, automatically assigning appropriate voices with professional results.
+
+Z
+
+Ms. Zhao
+
+Audiobook Producer
+
+## Frequently Asked Questions
+
+### What features are included in the trial?
+
+The trial includes a 7-day period with 1000 characters, support for 50+ languages, basic speed control, and voice selection. You can experience core features through text input to see if it meets your needs.
+
+### How do I start the trial?
+
+Simply register for an account to get trial access, no credit card required. You can upgrade to a paid plan anytime during the trial to access more features and higher character quotas.
+
+### How is the character quota calculated?
+
+Character quota is calculated based on the actual text input, including spaces and punctuation.
+
+### What payment methods are accepted?
+
+We accept various convenient payment methods: debit cards, credit cards, WeChat Pay, Alipay, and more. You'll find a suitable payment option regardless of your location. All payment channels are encrypted for security.
+
+### What's the difference between purchased quota and membership bonus quota?
+
+Character quota purchased separately is permanent and never expires. However, quota received through membership plans is temporary and will expire when the membership period ends. We recommend choosing the purchase method that best suits your usage needs.
+
+### What is voice cloning?
+
+Voice cloning is AI technology that creates a digital replica of your voice by analyzing speech samples. Upload 10 seconds to 5 minutes of clear audio, and AI learns your voice characteristics to read any text using your voice, supporting multiple languages.
+
+### What is story voiceover?
+
+Story voiceover converts text stories into multi-character audio, automatically identifying dialogues and narrations, assigning different voices to characters, and generating vivid audio stories.
+
+### How to generate story voiceover?
+
+Choose AI generation or manually input story content, the system automatically analyzes and identifies character dialogues, select voices for each character, then click generate to get complete story audio.
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+StripeM-Inner
+
+## VoiceCanvas Voice Tools
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [AI Podcast](https://voicecanvas.org/podcast) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### VoiceCanvas
+
+### Service Settings
+
+Speech ServiceAWS Polly
+
+Select LanguageEnglish
+
+Voice
+
+### System Voices
+
+Salli
+
+System Voice
+
+Female
+
+Joey
+
+System Voice
+
+Male
+
+Word by Word
+
+Off
+
+Speed1x
+
+### Read Text
+
+0/100,000 characters
+
+Read TextDownload AudioUpload File
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas Story
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [AI Podcast](https://voicecanvas.org/podcast) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### VoiceCanvas Story
+
+### Select Input Method
+
+AI Generate StoryInput Story Content
+
+### Story Requirements
+
+0/500Generate Story
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas AI Services
+```
+# https://voicecanvas.org/llms.txt
+
+- [VoiceCanvas AI Voice Solutions](https://voicecanvas.org/): AI-powered voice cloning and design for text-to-speech.
+- [VoiceCanvas Sitemap](https://voicecanvas.org/sitemap.xml): Explore VoiceCanvas sitemap for various resources and links.
+- [VoiceCanvas Voice Services](https://voicecanvas.org/app): Create voiceovers and clone voices with ease.
+- [Voice Cloning Service](https://voicecanvas.org/cloning): Easily clone voices by uploading audio recordings online.
+- [Voice Design Tool](https://voicecanvas.org/design): Create and customize unique voice designs for various needs.
+- [AI Story Voiceover](https://voicecanvas.org/story): Create and customize stories using AI voice technology.
+- [VoiceCanvas Pricing](https://voicecanvas.org/pricing): Explore affordable voice cloning and design plans for everyone.
+- [Privacy Policy](https://voicecanvas.org/privacy): VoiceCanvas explains data collection, usage, and user rights.
+- [VoiceCanvas Terms](https://voicecanvas.org/terms): VoiceCanvas terms for using voice services and accounts.
+- [VoiceCanvas TTS Services](https://voicecanvas.org/llms.txt): AI text-to-speech and voice cloning services available online.
+```
+
+## Voice Cloning Solutions
+````
+# https://voicecanvas.org/llms-full.txt
+
+## Voice Cloning Solutions
+[![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [Story Voiceover](https://voicecanvas.org/story) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+# VoiceCanvas
+
+Convert text to na
+
+AI Powered
+
+Voice Cloning
+
+Instant text-to-speech in 50+ languages with voice cloning and voice design, powered by advanced AI for natural and clear voice synthesis.
+
+[Try it Now](https://voicecanvas.org/app)
+
+[Voice Cloning](https://voicecanvas.org/cloning)
+
+## Core Features
+
+![AI故事生成演示](https://voicecanvas.org/images/gongneng4.png)
+
+AI GenerationMulti-CharacterAudio Conversion
+
+### AI Story Voiceover
+
+Generate engaging stories with AI and convert them to high-quality audio with multiple voice options
+
+- AI-powered story creation with customizable themes and characters
+- Multiple character voices with distinct personalities
+- Convert stories to immersive audio experiences
+- Support for custom story input and editing
+
+[Try Story Voiceover](https://voicecanvas.org/story)
+
+### Voice Design
+
+Create unique personalized voices through AI-powered intelligent voice design
+
+- AI-powered voice generation with natural language descriptions
+- Personalized voice customization for different scenarios
+- Real-time preview and audition to ensure voice quality
+- Permanently save designs for instant access and use
+
+[Try Voice Design](https://voicecanvas.org/design)
+
+![音色设计演示](https://voicecanvas.org/images/gongneng5.png)
+
+AI设计个性化实时预览
+
+![声音克隆演示](https://voicecanvas.org/images/gongneng2.png)
+
+00:35
+
+### Voice Cloning
+
+Personalized voice cloning for more human-like AI speech
+
+- Only requires 10-second sample to clone voice
+- Preserves original voice emotions and characteristics
+- Cross-language cloning support
+- Permanently valid cloned voice
+
+[Clone My Voice](https://voicecanvas.org/cloning)
+
+### Multiple Languages
+
+50+ languages with both male and female voices, perfect for global content
+
+- Support for 50+ languages and dialects
+- Multiple male and female voices per language
+- Multiple regional accent options (e.g. US, UK English)
+- Human-like natural intonation
+
+[Try Now](https://voicecanvas.org/app)
+
+![多语言支持演示](https://voicecanvas.org/images/gongneng1.png)
+
+ChineseEnglishJapaneseFrenchGerman...
+
+### Advanced Features
+
+Customize speed, visualize audio, and enable word-by-word reading for better learning
+
+- Adjust speech speed and tone
+- Real-time audio visualization
+- Word-by-word reading learning mode
+- One-click audio file download
+
+[Experience Advanced Features](https://voicecanvas.org/app)
+
+![高级功能演示](https://voicecanvas.org/images/gongneng3.png)
+
+语速控制
+
+下载音频
+
+可视化
+
+## Simple and Transparent Pricing
+
+Choose the plan that best fits your needs, adjust anytime
+
+### Trial
+
+Experience VoiceCanvas basic features
+
+Free
+
+- 1000 characters free
+- 7-day trial
+- 50+ languages supported
+- Basic speed control
+- Basic voice selection
+- Text input only
+- Standard support
+
+Start Trial
+
+Most Popular
+
+### Annual Plan
+
+Perfect for power users, best value
+
+$99.9$49.9/year
+
+- 1500000 characters per year
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story Voiceover
+- 24/7 dedicated support
+- Early access to new features
+
+Choose Annual
+
+### Monthly Plan
+
+Ideal for individuals and small projects
+
+$9.99$5.99/month
+
+- 100000 characters per month
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story Voiceover
+- Priority support
+
+Choose Monthly
+
+## Voice Clone/Design Packages
+
+Choose a package that suits your needs, supports voice cloning and voice design features, one-time purchase with lifetime validity
+
+### Basic Package
+
+Perfect for individual voice cloning and design experience
+
+$5$3
+
+- 1 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Standard customer support
+
+Buy Now
+
+Most Popular
+
+### Professional Package
+
+Suitable for professional users and teams for bulk usage
+
+$299$150
+
+- 50 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Priority customer support
+
+Buy Now
+
+### Advanced Package
+
+Ideal for small teams using voice cloning and design
+
+$59$30
+
+- 10 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Priority customer support
+
+Buy Now
+
+## Pay As You Go
+
+### 100K characters
+
+$6
+
+Buy Now
+
+Best Value
+
+### 1M characters
+
+$55
+
+Buy Now
+
+### 3M characters
+
+$150
+
+Buy Now
+
+## What Our Users Say
+
+"
+
+This tool has greatly improved my pronunciation and listening skills. The multiple language support is fantastic!
+
+J
+
+John Doe
+
+Language Learner
+
+"
+
+I use this daily for creating voiceovers. The quality is excellent and the process is super simple.
+
+M
+
+Maria Garcia
+
+Content Creator
+
+"
+
+Perfect for creating learning materials. My students love the clear pronunciation and adjustable speed.
+
+S
+
+Sarah Chen
+
+Teacher
+
+"
+
+This tool has revolutionized our international communication. The voice quality and language support are exceptional.
+
+R
+
+Robert Wilson
+
+Business Owner
+
+"
+
+This tool has significantly improved my content production efficiency, especially when dealing with multilingual content.
+
+L
+
+Mr. Li
+
+Content Creator
+
+"
+
+The voice cloning feature is amazing! With just a few seconds of voice sample, it perfectly replicates my voice, allowing me to easily create multilingual versions of my podcast.
+
+Y
+
+Ms. Yang
+
+Podcast Host
+
+"
+
+As a voice actor, I have high standards for voice quality. The voice cloning quality on this platform is impressive, preserving the emotion and characteristics of the original voice.
+
+K
+
+Mr. Ke
+
+Voice Actor
+
+"
+
+After cloning my voice on this platform, I can pre-record course content and make my explanations available to students anytime, greatly enhancing teaching effectiveness.
+
+H
+
+Ms. Huang
+
+Educator
+
+"
+
+The story voiceover feature is amazing! I can assign different voices to different characters, making my fairy tales vivid and engaging. Children love listening to them.
+
+L
+
+Mr. Liu
+
+Children's Story Writer
+
+"
+
+The multi-character voice feature has tripled my audiobook production efficiency! AI intelligently recognizes dialogue and narration, automatically assigning appropriate voices with professional results.
+
+Z
+
+Ms. Zhao
+
+Audiobook Producer
+
+## Frequently Asked Questions
+
+### What features are included in the trial?
+
+The trial includes a 7-day period with 1000 characters, support for 50+ languages, basic speed control, and voice selection. You can experience core features through text input to see if it meets your needs.
+
+### How do I start the trial?
+
+Simply register for an account to get trial access, no credit card required. You can upgrade to a paid plan anytime during the trial to access more features and higher character quotas.
+
+### How is the character quota calculated?
+
+Character quota is calculated based on the actual text input, including spaces and punctuation.
+
+### What payment methods are accepted?
+
+We accept various convenient payment methods: debit cards, credit cards, WeChat Pay, Alipay, and more. You'll find a suitable payment option regardless of your location. All payment channels are encrypted for security.
+
+### What's the difference between purchased quota and membership bonus quota?
+
+Character quota purchased separately is permanent and never expires. However, quota received through membership plans is temporary and will expire when the membership period ends. We recommend choosing the purchase method that best suits your usage needs.
+
+### What is voice cloning?
+
+Voice cloning is AI technology that creates a digital replica of your voice by analyzing speech samples. Upload 10 seconds to 5 minutes of clear audio, and AI learns your voice characteristics to read any text using your voice, supporting multiple languages.
+
+### What is story voiceover?
+
+Story voiceover converts text stories into multi-character audio, automatically identifying dialogues and narrations, assigning different voices to characters, and generating vivid audio stories.
+
+### How to generate story voiceover?
+
+Choose AI generation or manually input story content, the system automatically analyzes and identifies character dialogues, select voices for each character, then click generate to get complete story audio.
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas Sitemap
+https://voicecanvas.org/2025-07-29weekly1.0https://voicecanvas.org/app2025-07-29weekly0.9https://voicecanvas.org/cloning2025-07-29weekly0.9https://voicecanvas.org/design2025-07-29weekly0.9https://voicecanvas.org/story2025-07-29weekly0.9https://voicecanvas.org/pricing2025-07-29monthly0.7https://voicecanvas.org/privacy2025-07-29monthly0.5https://voicecanvas.org/terms2025-07-29monthly0.5https://voicecanvas.org/llms.txt2025-07-29monthly0.4https://voicecanvas.org/llms-full.txt2025-07-29monthly0.4
+
+## Privacy Policy
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [Story Voiceover](https://voicecanvas.org/story) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Privacy Policy
+
+## 1\. Introduction
+
+VoiceCanvas ("we," "our," or "the Company") respects your privacy. This Privacy Policy explains how we collect, use, disclose, process, and protect information that you provide to us through our website, applications, and related services (collectively, the "Services").
+
+## 2\. Information We Collect
+
+We may collect the following types of information:
+
+### 2.1 Information You Provide
+
+- Account information: Email address, username, and password when you create an account.
+- Profile information: Any additional profile information you choose to provide.
+- Payment information: Payment details when you purchase subscriptions or products.
+- User content: Content you upload, create, or generate, including text inputs and audio files.
+- Communications: Content of your communications with our customer support team.
+
+### 2.2 Automatically Collected Information
+
+- Usage data: Information about how you use our Services, such as feature usage, content generation, and interaction patterns.
+- Device information: IP address, browser type, operating system, device identifiers, and other technical information.
+- Cookies and similar technologies: Information collected through cookies and similar technologies, such as your browsing activity and preferences.
+
+## 3\. How We Use Your Information
+
+We may use your information for the following purposes:
+
+- To provide and maintain our Services, including voice synthesis and voice cloning features.
+- To process your payment transactions.
+- To personalize your experience and improve our Services.
+- To communicate with you, including sending service notifications, updates, and marketing information.
+- To analyze usage patterns and trends to improve our Services.
+- To detect, prevent, and address technical issues or security concerns.
+- To comply with legal obligations.
+
+## 4\. Audio Data and Voice Cloning
+
+Specifically regarding our voice cloning features:
+
+- We use audio samples you upload to create a digital model of your voice.
+- This model is associated only with your account and is not shared with other users unless you explicitly authorize it.
+- Your original audio files and generated voice models are used only for providing the Services and not for other purposes unless you explicitly consent.
+- You can request deletion of your voice model and uploaded audio data at any time.
+
+## 5\. Information Sharing and Disclosure
+
+We may share your information in the following circumstances:
+
+- With service providers: Third parties that provide services to us, such as payment processors, hosting providers, and customer support services.
+- Business transfers: If we are involved in a merger, acquisition, bankruptcy, reorganization, or sale of assets, your information may be transferred as part of that transaction.
+- Legal requirements: When we believe disclosure is necessary to (a) comply with applicable laws, regulations, or legal processes, or (b) protect our rights, property, or safety, or the rights, property, or safety of other users.
+- With your consent: In other cases where you have consented.
+
+## 6\. Data Security
+
+We implement appropriate technical and organizational measures to protect your information against accidental loss, unauthorized access, use, alteration, and disclosure. However, no method of Internet transmission or electronic storage is 100% secure.
+
+## 7\. Data Retention
+
+We retain your personal information no longer than necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.
+
+## 8\. Your Rights and Choices
+
+Depending on your location, you may have some or all of the following rights:
+
+- Right of access: Request a copy of the personal information we hold about you.
+- Right to rectification: Request correction of inaccurate or incomplete personal information we hold about you.
+- Right to erasure: Request deletion of your personal information in certain circumstances.
+- Right to restrict processing: Request restriction of processing of your personal information in certain circumstances.
+- Right to data portability: Receive your personal information that we hold in a structured, commonly used, and machine-readable format, where feasible.
+- Right to object: Object to our processing of your personal information.
+
+To exercise these rights, please contact us using the contact information provided below.
+
+## 9\. Children's Privacy
+
+Our Services are not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we might have any information from a child under 13, please contact us immediately.
+
+## 10\. International Data Transfers
+
+Your information may be transferred to and stored or processed in countries other than the country you are located in, where data protection laws may be different from those in your country. In such cases, we will ensure that appropriate safeguards are in place to protect your personal information.
+
+## 11\. Privacy Policy Updates
+
+We may update this Privacy Policy from time to time. If we make material changes, we will notify you by posting the updated policy on our website or through other communication channels. We encourage you to review this Privacy Policy periodically for any changes.
+
+## 12\. Contact Us
+
+If you have any questions or concerns about this Privacy Policy, please contact us at:
+
+Email: wt@wmcircle.cn
+
+Last Updated: December 1, 2024
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## Voice Cloning Service
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [Story Voiceover](https://voicecanvas.org/story) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Voice Cloning
+
+### Upload Audio
+
+Upload AudioRecord
+
+Start Cloning
+
+### Instructions
+
+1\. Upload a clear voice recording (supports mp3, m4a, wav format)
+
+2\. Recommended audio duration: 10 seconds - 5 minutes
+
+3\. Content should be text reading, avoid background noise
+
+4\. File size should not exceed 5MB
+
+5\. You'll receive a voice ID after cloning
+
+6\. Use the voice ID to generate cloned speech for any text
+
+Note: Please ensure you have legal rights to use the uploaded audio. Unauthorized audio cloning is prohibited. The cloned voice is for personal, non-commercial use only. Please comply with relevant laws and regulations.
+
+### Service Settings
+
+Select LanguageChinese
+
+Voice
+
+### System Voices
+
+清澈男声
+
+System Voice
+
+Male
+
+精英男声
+
+System Voice
+
+Male
+
+霸道男声
+
+System Voice
+
+Male
+
+大学生男声
+
+System Voice
+
+Male
+
+少女音
+
+System Voice
+
+Female
+
+御姐音
+
+System Voice
+
+Female
+
+成熟女声
+
+System Voice
+
+Female
+
+甜美女声
+
+System Voice
+
+Female
+
+主持人男声
+
+System Voice
+
+Male
+
+主持人女声
+
+System Voice
+
+Female
+
+有声书男声1
+
+System Voice
+
+Male
+
+有声书男声2
+
+System Voice
+
+Male
+
+有声书女声1
+
+System Voice
+
+Female
+
+有声书女声2
+
+System Voice
+
+Female
+
+清澈男声(精品)
+
+System Voice
+
+Male
+
+精英男声(精品)
+
+System Voice
+
+Male
+
+霸道男声(精品)
+
+System Voice
+
+Male
+
+大学生男声(精品)
+
+System Voice
+
+Male
+
+少女音(精品)
+
+System Voice
+
+Female
+
+御姐音(精品)
+
+System Voice
+
+Female
+
+成熟女声(精品)
+
+System Voice
+
+Female
+
+甜美女声(精品)
+
+System Voice
+
+Female
+
+机灵男孩
+
+System Voice
+
+Male
+
+可爱男孩
+
+System Voice
+
+Male
+
+可爱女孩
+
+System Voice
+
+Female
+
+卡通小猪
+
+System Voice
+
+Female
+
+冰骄弟弟
+
+System Voice
+
+Male
+
+俊朗男友
+
+System Voice
+
+Male
+
+纯真学弟
+
+System Voice
+
+Male
+
+冷淡兄长
+
+System Voice
+
+Male
+
+霸道少爷
+
+System Voice
+
+Male
+
+甜心校领
+
+System Voice
+
+Female
+
+俏皮萌妹
+
+System Voice
+
+Female
+
+妩媚御姐
+
+System Voice
+
+Female
+
+嗲嗲学妹
+
+System Voice
+
+Female
+
+淡雅学姐
+
+System Voice
+
+Female
+
+Speed1x
+
+Volume1
+
+Pitch0
+
+EmotionNo emotion (default)
+
+### Advanced Audio Options
+
+Sample Rate (Hz)32,000
+
+Bitrate (bps)128 kbps
+
+ChannelStereo
+
+### Read Text
+
+0/10,000
+
+Read TextDownload AudioUpload File
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas Terms
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [Story Voiceover](https://voicecanvas.org/story) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Terms of Service
+
+## 1\. Acceptance of Terms
+
+Welcome to VoiceCanvas services. By accessing or using our website, applications, APIs, or any related services (collectively, the "Services"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Services.
+
+## 2\. Service Description
+
+VoiceCanvas provides text-to-speech and voice cloning services that allow users to convert text into speech output and create personalized voice models based on user-uploaded voice samples.
+
+## 3\. User Accounts
+
+3.1 You may need to create an account to use certain features of the Services. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+
+3.2 You must provide accurate, complete, and up-to-date account information.
+
+3.3 You must notify us immediately of any unauthorized use of your account.
+
+## 4\. Use of Services
+
+4.1 You agree not to use the Services in any manner that violates any applicable laws, regulations, or this Agreement.
+
+4.2 You may not use the Services to transmit any illegal, harmful, threatening, abusive, harassing, defamatory, obscene, or otherwise objectionable content.
+
+4.3 You may not attempt to interfere with or disrupt the functionality or security of the Services.
+
+## 5\. Voice Cloning and Content Use
+
+5.1 You must own the legal rights to audio materials you upload for voice cloning.
+
+5.2 You may not upload audio containing third-party voices, copyrighted content, or unauthorized materials unless you have obtained legal rights to do so.
+
+5.3 You may not use voice cloning features to impersonate, mimic others, or create misleading content.
+
+5.4 You may not use cloned voices for fraudulent, deceptive, or any other unlawful activities.
+
+## 6\. Content Ownership and License
+
+6.1 You retain all rights to content you create (including uploaded audio and generated speech), but grant us a non-exclusive, worldwide, royalty-free license to enable us to provide and improve the Services.
+
+6.2 We retain all right, title, and interest in the Services themselves, including the software, technology, algorithms, and related intellectual property.
+
+## 7\. Privacy
+
+We collect and use your information according to our [Privacy Policy](https://voicecanvas.org/privacy), which forms a part of this Agreement.
+
+## 8\. Subscriptions and Payment
+
+8.1 Certain Service features may require paid subscriptions or one-time purchases.
+
+8.2 Subscriptions automatically renew unless you cancel prior to the renewal date.
+
+8.3 We reserve the right to change prices at any time, but will notify you of any changes.
+
+8.4 All payments are final unless refunds are required by law.
+
+## 9\. Termination
+
+9.1 You may terminate this Agreement at any time by ceasing to use the Services or by closing your account.
+
+9.2 We reserve the right to suspend or terminate your access to the Services for any reason, including violation of this Agreement.
+
+## 10\. Disclaimer and Limitation of Liability
+
+10.1 The Services are provided "as is" and "as available" without warranties of any kind, either express or implied.
+
+10.2 We do not guarantee that the Services will be uninterrupted, timely, secure, or error-free.
+
+10.3 To the maximum extent permitted by applicable law, we shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages.
+
+## 11\. Modifications
+
+We reserve the right to modify this Agreement at any time. We will notify you of changes by posting the updated version on the website. Your continued use of the Services after such changes constitutes acceptance of the modified terms.
+
+## 12\. Contact Us
+
+If you have any questions about this Agreement, please contact us at the following email address: wt@wmcircle.cn
+
+Last Updated: December 1, 2024
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas Voiceover Tool
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [Story Voiceover](https://voicecanvas.org/story) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### VoiceCanvas
+
+### Service Settings
+
+Speech ServiceAWS Polly
+
+Select LanguageEnglish
+
+Voice
+
+### System Voices
+
+Salli
+
+System Voice
+
+Female
+
+Joey
+
+System Voice
+
+Male
+
+Word by Word
+
+Off
+
+Speed1x
+
+### Read Text
+
+0/100,000 characters
+
+Read TextDownload AudioUpload File
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## AI Story Voiceover
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [Story Voiceover](https://voicecanvas.org/story) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### VoiceCanvas Story
+
+### Select Input Method
+
+AI Generate StoryInput Story Content
+
+### Story Requirements
+
+0/500Generate Story
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas TTS Services
+```
+# https://voicecanvas.org/ llms.txt
+
+- [VoiceCanvas TTS & Cloning](https://voicecanvas.org/): AI-powered text-to-speech and voice cloning in 50+ languages.
+- [Voice Cloning Service](https://voicecanvas.org/cloning): Easily clone voices by uploading audio recordings online.
+- [Privacy Policy](https://voicecanvas.org/privacy): VoiceCanvas explains data collection, usage, and user rights.
+- [VoiceCanvas Terms](https://voicecanvas.org/terms): VoiceCanvas terms for using voice services and cloning.
+- [VoiceCanvas Pricing](https://voicecanvas.org/pricing): Explore affordable voice cloning and text-to-speech plans.
+- [VoiceCanvas Audio App](https://voicecanvas.org/app): VoiceCanvas app for creating and sharing audio experiences.
+```
+
+## Voice Design Tool
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [Story Voiceover](https://voicecanvas.org/story) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Voice Design
+
+### Design Voice
+
+Voice Description
+
+Description examples:
+
+- • "Clear and sweet female voice, young and lively, suitable for news broadcasting"
+- • "Steady and magnetic male voice, mature and professional, suitable for business scenarios"
+- • "Gentle and kind voice with a touch of warmth, suitable for children's stories"
+
+Test Text \*0/10,000
+
+Quick Descriptions
+
+Warm & Friendly
+
+Warm and friendly voice with healing quality
+
+Professional Business
+
+Professional and steady business voice
+
+Energetic & Youthful
+
+Energetic and youthful voice
+
+Magnetic & Mature
+
+Deep and magnetic mature voice
+
+Sweet & Cute
+
+Sweet and cute fresh voice
+
+Steady & Authoritative
+
+Steady and authoritative voice
+
+Generate & Save Voice
+
+### Service Settings
+
+Select LanguageChinese
+
+Voice
+
+No designed voices
+
+Please design and save a voice first
+
+Speed1x
+
+Volume1
+
+Pitch0
+
+EmotionNo emotion (default)
+
+### Advanced Audio Options
+
+Sample Rate (Hz)32,000
+
+Bitrate (bps)128 kbps
+
+ChannelStereo
+
+### Read Text
+
+0/10,000
+
+Read TextDownload Audio
+
+## VoiceCanvas Pricing
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [Story Voiceover](https://voicecanvas.org/story) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+# Simple and Transparent Pricing
+
+Choose the plan that best fits your needs, adjust anytime
+
+### Trial
+
+Experience VoiceCanvas basic features
+
+Free
+
+- 1000 characters free
+- 7-day trial
+- 50+ languages supported
+- Basic speed control
+- Basic voice selection
+- Text input only
+- Standard support
+
+Start Trial
+
+Most Popular
+
+### Annual Plan
+
+Perfect for power users, best value
+
+$99.9$49.9/year
+
+Save $50
+
+- 1500000 characters per year
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story Voiceover
+- 24/7 dedicated support
+- Early access to new features
+
+Choose Annual
+
+### Monthly Plan
+
+Ideal for individuals and small projects
+
+$9.99$5.99/month
+
+Save $4
+
+- 100000 characters per month
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story Voiceover
+- Priority support
+
+Choose Monthly
+
+## Voice Clone/Design Packages
+
+Choose a package that suits your needs, supports voice cloning and voice design features, one-time purchase with lifetime validity
+
+### Basic Package
+
+Perfect for individual voice cloning and design experience
+
+$5$3
+
+Save$2
+
+- 1 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Standard customer support
+
+Buy Now
+
+Most Popular
+
+### Professional Package
+
+Suitable for professional users and teams for bulk usage
+
+$299$150
+
+Save$149
+
+- 50 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Priority customer support
+
+Buy Now
+
+### Advanced Package
+
+Ideal for small teams using voice cloning and design
+
+$59$30
+
+Save$29
+
+- 10 voice clones/designs
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization and voice design
+- Priority customer support
+
+Buy Now
+
+## Pay As You Go
+
+### 100K characters
+
+$6
+
+Buy Now
+
+Best Value
+
+### 1M characters
+
+$55
+
+Buy Now
+
+### 3M characters
+
+$150
+
+Buy Now
+
+## What Our Users Say
+
+"
+
+This tool has greatly improved my pronunciation and listening skills. The multiple language support is fantastic!
+
+J
+
+John Doe
+
+Language Learner
+
+"
+
+I use this daily for creating voiceovers. The quality is excellent and the process is super simple.
+
+M
+
+Maria Garcia
+
+Content Creator
+
+"
+
+Perfect for creating learning materials. My students love the clear pronunciation and adjustable speed.
+
+S
+
+Sarah Chen
+
+Teacher
+
+"
+
+This tool has revolutionized our international communication. The voice quality and language support are exceptional.
+
+R
+
+Robert Wilson
+
+Business Owner
+
+"
+
+This tool has significantly improved my content production efficiency, especially when dealing with multilingual content.
+
+L
+
+Mr. Li
+
+Content Creator
+
+"
+
+The voice cloning feature is amazing! With just a few seconds of voice sample, it perfectly replicates my voice, allowing me to easily create multilingual versions of my podcast.
+
+Y
+
+Ms. Yang
+
+Podcast Host
+
+"
+
+As a voice actor, I have high standards for voice quality. The voice cloning quality on this platform is impressive, preserving the emotion and characteristics of the original voice.
+
+K
+
+Mr. Ke
+
+Voice Actor
+
+"
+
+After cloning my voice on this platform, I can pre-record course content and make my explanations available to students anytime, greatly enhancing teaching effectiveness.
+
+H
+
+Ms. Huang
+
+Educator
+
+"
+
+The story voiceover feature is amazing! I can assign different voices to different characters, making my fairy tales vivid and engaging. Children love listening to them.
+
+L
+
+Mr. Liu
+
+Children's Story Writer
+
+"
+
+The multi-character voice feature has tripled my audiobook production efficiency! AI intelligently recognizes dialogue and narration, automatically assigning appropriate voices with professional results.
+
+Z
+
+Ms. Zhao
+
+Audiobook Producer
+
+## Frequently Asked Questions
+
+### What features are included in the trial?
+
+The trial includes a 7-day period with 1000 characters, support for 50+ languages, basic speed control, and voice selection. You can experience core features through text input to see if it meets your needs.
+
+### How do I start the trial?
+
+Simply register for an account to get trial access, no credit card required. You can upgrade to a paid plan anytime during the trial to access more features and higher character quotas.
+
+### How is the character quota calculated?
+
+Character quota is calculated based on the actual text input, including spaces and punctuation.
+
+### What payment methods are accepted?
+
+We accept various convenient payment methods: debit cards, credit cards, WeChat Pay, Alipay, and more. You'll find a suitable payment option regardless of your location. All payment channels are encrypted for security.
+
+### What's the difference between purchased quota and membership bonus quota?
+
+Character quota purchased separately is permanent and never expires. However, quota received through membership plans is temporary and will expire when the membership period ends. We recommend choosing the purchase method that best suits your usage needs.
+
+### What is voice cloning?
+
+Voice cloning is AI technology that creates a digital replica of your voice by analyzing speech samples. Upload 10 seconds to 5 minutes of clear audio, and AI learns your voice characteristics to read any text using your voice, supporting multiple languages.
+
+### What is story voiceover?
+
+Story voiceover converts text stories into multi-character audio, automatically identifying dialogues and narrations, assigning different voices to characters, and generating vivid audio stories.
+
+### How to generate story voiceover?
+
+Choose AI generation or manually input story content, the system automatically analyzes and identifies character dialogues, select voices for each character, then click generate to get complete story audio.
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas TTS Services
+```
+# https://voicecanvas.org/ llms-full.txt
+
+## VoiceCanvas TTS & Cloning
+[![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+# VoiceCanvas
+
+Convert text to natural sp
+
+AI Powered
+
+Voice Cloning
+
+50+ Languages
+
+Instant text-to-speech in 50+ languages with voice cloning, powered by advanced AI for natural and clear voice synthesis.
+
+[Try it Now](https://voicecanvas.org/app)
+
+[Voice Cloning](https://voicecanvas.org/cloning)
+
+## Core Features
+
+### Multiple Languages
+
+50+ languages with both male and female voices, perfect for global content
+
+- Support for 50+ languages and dialects
+- Multiple male and female voices per language
+- Multiple regional accent options (e.g. US, UK English)
+- Human-like natural intonation
+
+[Try Now](https://voicecanvas.org/app)
+
+![多语言支持演示](https://voicecanvas.org/images/gongneng1.png)
+
+ChineseEnglishJapaneseFrenchGerman...
+
+![声音克隆演示](https://voicecanvas.org/images/gongneng2.png)
+
+00:35
+
+### Voice Cloning
+
+Personalized voice cloning for more human-like AI speech
+
+- Only requires 10-second sample to clone voice
+- Preserves original voice emotions and characteristics
+- Cross-language cloning support
+- Permanently valid cloned voice
+
+[Clone My Voice](https://voicecanvas.org/cloning)
+
+### Advanced Features
+
+Customize speed, visualize audio, and enable word-by-word reading for better learning
+
+- Adjust speech speed and tone
+- Real-time audio visualization
+- Word-by-word reading learning mode
+- One-click audio file download
+
+[Experience Advanced Features](https://voicecanvas.org/app)
+
+![高级功能演示](https://voicecanvas.org/images/gongneng3.png)
+
+语速控制
+
+下载音频
+
+可视化
+
+## Simple and Transparent Pricing
+
+Choose the plan that best fits your needs, adjust anytime
+
+### Trial
+
+Experience VoiceCanvas basic features
+
+Free
+
+- 1000 characters free
+- 7-day trial
+- 50+ languages supported
+- Basic speed control
+- Basic voice selection
+- Text input only
+- Standard support
+
+Start Trial
+
+Most Popular
+
+### Annual Plan
+
+Perfect for power users, best value
+
+$99.9$59.9/year
+
+Save $40
+
+- 1500000 characters per year
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story voiceover
+- 24/7 dedicated support
+- Early access to new features
+
+Choose Annual
+
+### Monthly Plan
+
+Ideal for individuals and small projects
+
+$9.99$5.99/month
+
+Save $4
+
+- 100000 characters per month
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story voiceover
+- Priority support
+
+Choose Monthly
+
+## Voice Clone Packages
+
+Choose a clone package that suits your needs, one-time purchase with lifetime validity
+
+### Basic Clone Package
+
+Perfect for individual experience
+
+$5$3
+
+- 1 voice clones
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization
+- Standard customer support
+
+Buy Now
+
+Most Popular
+
+### Professional Clone Package
+
+Suitable for professional users and teams
+
+$299$150
+
+- 50 voice clones
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization
+- Priority customer support
+
+Buy Now
+
+### Advanced Clone Package
+
+Ideal for small teams
+
+$59$30
+
+- 10 voice clones
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization
+- Priority customer support
+
+Buy Now
+
+## Pay As You Go
+
+### 100K characters
+
+$6
+
+Buy Now
+
+Best Value
+
+### 1M characters
+
+$55
+
+Buy Now
+
+### 3M characters
+
+$150
+
+Buy Now
+
+## What Our Users Say
+
+"
+
+This tool has greatly improved my pronunciation and listening skills. The multiple language support is fantastic!
+
+J
+
+John Doe
+
+Language Learner
+
+"
+
+I use this daily for creating voiceovers. The quality is excellent and the process is super simple.
+
+M
+
+Maria Garcia
+
+Content Creator
+
+"
+
+Perfect for creating learning materials. My students love the clear pronunciation and adjustable speed.
+
+S
+
+Sarah Chen
+
+Teacher
+
+"
+
+This tool has revolutionized our international communication. The voice quality and language support are exceptional.
+
+R
+
+Robert Wilson
+
+Business Owner
+
+"
+
+This tool has significantly improved my content production efficiency, especially when dealing with multilingual content.
+
+L
+
+Mr. Li
+
+Content Creator
+
+"
+
+The voice cloning feature is amazing! With just a few seconds of voice sample, it perfectly replicates my voice, allowing me to easily create multilingual versions of my podcast.
+
+Y
+
+Ms. Yang
+
+Podcast Host
+
+"
+
+As a voice actor, I have high standards for voice quality. The voice cloning quality on this platform is impressive, preserving the emotion and characteristics of the original voice.
+
+K
+
+Mr. Ke
+
+Voice Actor
+
+"
+
+After cloning my voice on this platform, I can pre-record course content and let students hear my explanations anytime, greatly enhancing the teaching effectiveness.
+
+H
+
+Ms. Huang
+
+Educator
+
+## Frequently Asked Questions
+
+### What features are included in the trial?
+
+The trial includes a 7-day period with 1000 characters, support for 50+ languages, basic speed control, and voice selection. You can experience core features through text input to see if it meets your needs.
+
+### How do I start the trial?
+
+Simply register for an account to get trial access, no credit card required. You can upgrade to a paid plan anytime during the trial to access more features and higher character quotas.
+
+### How is the character quota calculated?
+
+Character quota is calculated based on the actual text input, including spaces and punctuation.
+
+### What payment methods are accepted?
+
+We accept various convenient payment methods: debit cards, credit cards, WeChat Pay, Alipay, and more. You'll find a suitable payment option regardless of your location. All payment channels are encrypted for security.
+
+### What's the difference between purchased quota and membership bonus quota?
+
+Character quota purchased separately is permanent and never expires. However, quota received through membership plans is temporary and will expire when the membership period ends. We recommend choosing the purchase method that best suits your usage needs.
+
+### How does voice cloning work and what should I know?
+
+Voice cloning creates a digital copy of your voice using AI technology. To get the best results: 1) Record at least 1 minute of clear speech in a quiet environment with a good microphone. 2) Clone credits are permanent and never expire. 3) Once cloned, you can use your voice for text-to-speech in any supported language. 4) The cloned voice quality depends mainly on your recording quality. 5) Perfect for content creation, dubbing, or personal use.
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## Voice Cloning Service
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Voice Cloning
+
+### Upload Audio
+
+Upload AudioRecord
+
+Start Cloning
+
+### Instructions
+
+1\. Upload a clear voice recording (supports mp3, m4a, wav format)
+
+2\. Recommended audio duration: 10 seconds - 5 minutes
+
+3\. Content should be text reading, avoid background noise
+
+4\. File size should not exceed 20MB
+
+5\. You'll receive a voice ID after cloning
+
+6\. Use the voice ID to generate cloned speech for any text
+
+Note: Please ensure you have legal rights to use the uploaded audio. Unauthorized audio cloning is prohibited. The cloned voice is for personal, non-commercial use only. Please comply with relevant laws and regulations.
+
+### Service Settings
+
+Select LanguageChinese
+
+Voice
+
+### System Voices
+
+清澈男声
+
+System Voice
+
+Male
+
+精英男声
+
+System Voice
+
+Male
+
+霸道男声
+
+System Voice
+
+Male
+
+大学生男声
+
+System Voice
+
+Male
+
+少女音
+
+System Voice
+
+Female
+
+御姐音
+
+System Voice
+
+Female
+
+成熟女声
+
+System Voice
+
+Female
+
+甜美女声
+
+System Voice
+
+Female
+
+主持人男声
+
+System Voice
+
+Male
+
+主持人女声
+
+System Voice
+
+Female
+
+有声书男声1
+
+System Voice
+
+Male
+
+有声书男声2
+
+System Voice
+
+Male
+
+有声书女声1
+
+System Voice
+
+Female
+
+有声书女声2
+
+System Voice
+
+Female
+
+清澈男声(精品)
+
+System Voice
+
+Male
+
+精英男声(精品)
+
+System Voice
+
+Male
+
+霸道男声(精品)
+
+System Voice
+
+Male
+
+大学生男声(精品)
+
+System Voice
+
+Male
+
+少女音(精品)
+
+System Voice
+
+Female
+
+御姐音(精品)
+
+System Voice
+
+Female
+
+成熟女声(精品)
+
+System Voice
+
+Female
+
+甜美女声(精品)
+
+System Voice
+
+Female
+
+机灵男孩
+
+System Voice
+
+Male
+
+可爱男孩
+
+System Voice
+
+Male
+
+可爱女孩
+
+System Voice
+
+Female
+
+卡通小猪
+
+System Voice
+
+Female
+
+冰骄弟弟
+
+System Voice
+
+Male
+
+俊朗男友
+
+System Voice
+
+Male
+
+纯真学弟
+
+System Voice
+
+Male
+
+冷淡兄长
+
+System Voice
+
+Male
+
+霸道少爷
+
+System Voice
+
+Male
+
+甜心校领
+
+System Voice
+
+Female
+
+俏皮萌妹
+
+System Voice
+
+Female
+
+妩媚御姐
+
+System Voice
+
+Female
+
+嗲嗲学妹
+
+System Voice
+
+Female
+
+淡雅学姐
+
+System Voice
+
+Female
+
+Speed1x
+
+Volume1
+
+Pitch0
+
+EmotionNo emotion (default)
+
+### Advanced Audio Options
+
+Sample Rate (Hz)32,000
+
+Bitrate (bps)128 kbps
+
+ChannelStereo
+
+### Read Text
+
+0/10,000
+
+Read TextDownload AudioUpload File
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## Privacy Policy
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Privacy Policy
+
+## 1\. Introduction
+
+VoiceCanvas ("we," "our," or "the Company") respects your privacy. This Privacy Policy explains how we collect, use, disclose, process, and protect information that you provide to us through our website, applications, and related services (collectively, the "Services").
+
+## 2\. Information We Collect
+
+We may collect the following types of information:
+
+### 2.1 Information You Provide
+
+- Account information: Email address, username, and password when you create an account.
+- Profile information: Any additional profile information you choose to provide.
+- Payment information: Payment details when you purchase subscriptions or products.
+- User content: Content you upload, create, or generate, including text inputs and audio files.
+- Communications: Content of your communications with our customer support team.
+
+### 2.2 Automatically Collected Information
+
+- Usage data: Information about how you use our Services, such as feature usage, content generation, and interaction patterns.
+- Device information: IP address, browser type, operating system, device identifiers, and other technical information.
+- Cookies and similar technologies: Information collected through cookies and similar technologies, such as your browsing activity and preferences.
+
+## 3\. How We Use Your Information
+
+We may use your information for the following purposes:
+
+- To provide and maintain our Services, including voice synthesis and voice cloning features.
+- To process your payment transactions.
+- To personalize your experience and improve our Services.
+- To communicate with you, including sending service notifications, updates, and marketing information.
+- To analyze usage patterns and trends to improve our Services.
+- To detect, prevent, and address technical issues or security concerns.
+- To comply with legal obligations.
+
+## 4\. Audio Data and Voice Cloning
+
+Specifically regarding our voice cloning features:
+
+- We use audio samples you upload to create a digital model of your voice.
+- This model is associated only with your account and is not shared with other users unless you explicitly authorize it.
+- Your original audio files and generated voice models are used only for providing the Services and not for other purposes unless you explicitly consent.
+- You can request deletion of your voice model and uploaded audio data at any time.
+
+## 5\. Information Sharing and Disclosure
+
+We may share your information in the following circumstances:
+
+- With service providers: Third parties that provide services to us, such as payment processors, hosting providers, and customer support services.
+- Business transfers: If we are involved in a merger, acquisition, bankruptcy, reorganization, or sale of assets, your information may be transferred as part of that transaction.
+- Legal requirements: When we believe disclosure is necessary to (a) comply with applicable laws, regulations, or legal processes, or (b) protect our rights, property, or safety, or the rights, property, or safety of other users.
+- With your consent: In other cases where you have consented.
+
+## 6\. Data Security
+
+We implement appropriate technical and organizational measures to protect your information against accidental loss, unauthorized access, use, alteration, and disclosure. However, no method of Internet transmission or electronic storage is 100% secure.
+
+## 7\. Data Retention
+
+We retain your personal information no longer than necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.
+
+## 8\. Your Rights and Choices
+
+Depending on your location, you may have some or all of the following rights:
+
+- Right of access: Request a copy of the personal information we hold about you.
+- Right to rectification: Request correction of inaccurate or incomplete personal information we hold about you.
+- Right to erasure: Request deletion of your personal information in certain circumstances.
+- Right to restrict processing: Request restriction of processing of your personal information in certain circumstances.
+- Right to data portability: Receive your personal information that we hold in a structured, commonly used, and machine-readable format, where feasible.
+- Right to object: Object to our processing of your personal information.
+
+To exercise these rights, please contact us using the contact information provided below.
+
+## 9\. Children's Privacy
+
+Our Services are not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we might have any information from a child under 13, please contact us immediately.
+
+## 10\. International Data Transfers
+
+Your information may be transferred to and stored or processed in countries other than the country you are located in, where data protection laws may be different from those in your country. In such cases, we will ensure that appropriate safeguards are in place to protect your personal information.
+
+## 11\. Privacy Policy Updates
+
+We may update this Privacy Policy from time to time. If we make material changes, we will notify you by posting the updated policy on our website or through other communication channels. We encourage you to review this Privacy Policy periodically for any changes.
+
+## 12\. Contact Us
+
+If you have any questions or concerns about this Privacy Policy, please contact us at:
+
+Email: wt@wmcircle.cn
+
+Last Updated: December 1, 2024
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas Terms
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Terms of Service
+
+## 1\. Acceptance of Terms
+
+Welcome to VoiceCanvas services. By accessing or using our website, applications, APIs, or any related services (collectively, the "Services"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Services.
+
+## 2\. Service Description
+
+VoiceCanvas provides text-to-speech and voice cloning services that allow users to convert text into speech output and create personalized voice models based on user-uploaded voice samples.
+
+## 3\. User Accounts
+
+3.1 You may need to create an account to use certain features of the Services. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+
+3.2 You must provide accurate, complete, and up-to-date account information.
+
+3.3 You must notify us immediately of any unauthorized use of your account.
+
+## 4\. Use of Services
+
+4.1 You agree not to use the Services in any manner that violates any applicable laws, regulations, or this Agreement.
+
+4.2 You may not use the Services to transmit any illegal, harmful, threatening, abusive, harassing, defamatory, obscene, or otherwise objectionable content.
+
+4.3 You may not attempt to interfere with or disrupt the functionality or security of the Services.
+
+## 5\. Voice Cloning and Content Use
+
+5.1 You must own the legal rights to audio materials you upload for voice cloning.
+
+5.2 You may not upload audio containing third-party voices, copyrighted content, or unauthorized materials unless you have obtained legal rights to do so.
+
+5.3 You may not use voice cloning features to impersonate, mimic others, or create misleading content.
+
+5.4 You may not use cloned voices for fraudulent, deceptive, or any other unlawful activities.
+
+## 6\. Content Ownership and License
+
+6.1 You retain all rights to content you create (including uploaded audio and generated speech), but grant us a non-exclusive, worldwide, royalty-free license to enable us to provide and improve the Services.
+
+6.2 We retain all right, title, and interest in the Services themselves, including the software, technology, algorithms, and related intellectual property.
+
+## 7\. Privacy
+
+We collect and use your information according to our [Privacy Policy](https://voicecanvas.org/privacy), which forms a part of this Agreement.
+
+## 8\. Subscriptions and Payment
+
+8.1 Certain Service features may require paid subscriptions or one-time purchases.
+
+8.2 Subscriptions automatically renew unless you cancel prior to the renewal date.
+
+8.3 We reserve the right to change prices at any time, but will notify you of any changes.
+
+8.4 All payments are final unless refunds are required by law.
+
+## 9\. Termination
+
+9.1 You may terminate this Agreement at any time by ceasing to use the Services or by closing your account.
+
+9.2 We reserve the right to suspend or terminate your access to the Services for any reason, including violation of this Agreement.
+
+## 10\. Disclaimer and Limitation of Liability
+
+10.1 The Services are provided "as is" and "as available" without warranties of any kind, either express or implied.
+
+10.2 We do not guarantee that the Services will be uninterrupted, timely, secure, or error-free.
+
+10.3 To the maximum extent permitted by applicable law, we shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages.
+
+## 11\. Modifications
+
+We reserve the right to modify this Agreement at any time. We will notify you of changes by posting the updated version on the website. Your continued use of the Services after such changes constitutes acceptance of the modified terms.
+
+## 12\. Contact Us
+
+If you have any questions about this Agreement, please contact us at the following email address: wt@wmcircle.cn
+
+Last Updated: December 1, 2024
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas Pricing
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+# Simple and Transparent Pricing
+
+Choose the plan that best fits your needs, adjust anytime
+
+### Trial
+
+Experience VoiceCanvas basic features
+
+Free
+
+- 1000 characters free
+- 7-day trial
+- 50+ languages supported
+- Basic speed control
+- Basic voice selection
+- Text input only
+- Standard support
+
+Start Trial
+
+Most Popular
+
+### Annual Plan
+
+Perfect for power users, best value
+
+$99.9$59.9/year
+
+Save $40
+
+- 1500000 characters per year
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story voiceover
+- 24/7 dedicated support
+- Early access to new features
+
+Choose Annual
+
+### Monthly Plan
+
+Ideal for individuals and small projects
+
+$9.99$5.99/month
+
+Save $4
+
+- 100000 characters per month
+- 50+ languages supported
+- Full speed control
+- All voices available
+- Word-by-word reading
+- File upload support
+- Audio visualization
+- Story voiceover
+- Priority support
+
+Choose Monthly
+
+## Voice Clone Packages
+
+Choose a clone package that suits your needs, one-time purchase with lifetime validity
+
+### Basic Clone Package
+
+Perfect for individual experience
+
+$5$3
+
+Save$2
+
+- 1 voice clones
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization
+- Standard customer support
+
+Buy Now
+
+Most Popular
+
+### Professional Clone Package
+
+Suitable for professional users and teams
+
+$299$150
+
+Save$149
+
+- 50 voice clones
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization
+- Priority customer support
+
+Buy Now
+
+### Advanced Clone Package
+
+Ideal for small teams
+
+$59$30
+
+Save$29
+
+- 10 voice clones
+- Valid forever
+- Support for multiple languages including Chinese, English, Japanese, Korean
+- Support for personalization
+- Priority customer support
+
+Buy Now
+
+## Pay As You Go
+
+### 100K characters
+
+$6
+
+Buy Now
+
+Best Value
+
+### 1M characters
+
+$55
+
+Buy Now
+
+### 3M characters
+
+$150
+
+Buy Now
+
+## Frequently Asked Questions
+
+### What features are included in the trial?
+
+The trial includes a 7-day period with 1000 characters, support for 50+ languages, basic speed control, and voice selection. You can experience core features through text input to see if it meets your needs.
+
+### How do I start the trial?
+
+Simply register for an account to get trial access, no credit card required. You can upgrade to a paid plan anytime during the trial to access more features and higher character quotas.
+
+### How is the character quota calculated?
+
+Character quota is calculated based on the actual text input, including spaces and punctuation.
+
+### What payment methods are accepted?
+
+We accept various convenient payment methods: debit cards, credit cards, WeChat Pay, Alipay, and more. You'll find a suitable payment option regardless of your location. All payment channels are encrypted for security.
+
+### What's the difference between purchased quota and membership bonus quota?
+
+Character quota purchased separately is permanent and never expires. However, quota received through membership plans is temporary and will expire when the membership period ends. We recommend choosing the purchase method that best suits your usage needs.
+
+### How does voice cloning work and what should I know?
+
+Voice cloning creates a digital copy of your voice using AI technology. To get the best results: 1) Record at least 1 minute of clear speech in a quiet environment with a good microphone. 2) Clone credits are permanent and never expire. 3) Once cloned, you can use your voice for text-to-speech in any supported language. 4) The cloned voice quality depends mainly on your recording quality. 5) Perfect for content creation, dubbing, or personal use.
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")
+
+## VoiceCanvas Audio App
+## Application error: a client-side exception has occurred (see the browser console for more information).
+````
+
+## Cookie Policy Overview
+[Back](https://voicecanvas.org/) [![Logo](https://voicecanvas.org/images/logo.png)VoiceCanvas](https://voicecanvas.org/)
+
+[Home](https://voicecanvas.org/) [Workspace](https://voicecanvas.org/app) [Voice Cloning](https://voicecanvas.org/cloning) [Voice Design](https://voicecanvas.org/design) [AI Podcast](https://voicecanvas.org/podcast) [Pricing](https://voicecanvas.org/pricing)
+
+English
+
+LoginRegister
+
+### Cookie Policy
+
+## 1\. What Are Cookies
+
+Cookies are small text files that are stored on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners about how users interact with their sites.
+
+## 2\. How We Use Cookies
+
+VoiceCanvas uses cookies to enhance your experience on our platform. We use cookies for the following purposes:
+
+- **Essential Cookies:** These cookies are necessary for the website to function properly. They enable core functionality such as security, network management, and accessibility.
+- **Authentication Cookies:** These cookies help us remember your login status and keep you signed in across sessions.
+- **Preference Cookies:** These cookies remember your settings and preferences, such as language selection and theme preferences.
+- **Analytics Cookies:** These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.
+
+## 3\. Types of Cookies We Use
+
+### 3.1 Strictly Necessary Cookies
+
+These cookies are essential for you to browse the website and use its features. Without these cookies, services you have asked for cannot be provided. These cookies include:
+
+- Session management cookies
+- Security cookies
+- Load balancing cookies
+
+### 3.2 Functional Cookies
+
+These cookies allow the website to remember choices you make and provide enhanced, more personal features. These cookies include:
+
+- Language preference cookies
+- Theme selection cookies
+- User interface customization cookies
+
+### 3.3 Analytics Cookies
+
+These cookies collect information about how you use our website. The information is collected in an anonymous form and includes the number of visitors, where visitors come from, and the pages they visited. These cookies help us:
+
+- Understand how visitors interact with our website
+- Improve website performance and user experience
+- Analyze usage patterns and trends
+
+## 4\. Third-Party Cookies
+
+We may use third-party services that set cookies on your device. These include:
+
+- **Authentication Services:** Google OAuth, GitHub OAuth for secure login
+- **Payment Processing:** Stripe for secure payment processing
+- **Analytics Services:** To help us understand website usage and improve our services
+
+These third-party services have their own privacy policies and cookie policies, which we encourage you to review.
+
+## 5\. Managing Cookies
+
+You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by:
+
+### 5.1 Browser Settings
+
+Most web browsers allow you to control cookies through their settings preferences. You can:
+
+- View what cookies are stored on your device
+- Delete cookies individually or all at once
+- Block cookies from specific sites
+- Block all cookies
+- Set your browser to notify you when cookies are being set
+
+### 5.2 Browser-Specific Instructions
+
+For specific instructions on how to manage cookies in your browser, please visit:
+
+- [Google Chrome](https://support.google.com/chrome/answer/95647)
+- [Mozilla Firefox](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer)
+- [Safari](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac)
+- [Internet Explorer](https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies)
+- [Microsoft Edge](https://support.microsoft.com/en-us/help/4027947/microsoft-edge-delete-cookies)
+
+## 6\. Impact of Disabling Cookies
+
+Please note that if you choose to disable cookies, some features of our website may not function properly. Specifically:
+
+- You may not be able to stay logged in
+- Your preferences and settings may not be saved
+- Some interactive features may not work correctly
+- We may not be able to provide personalized experiences
+
+## 7\. Cookie Retention
+
+Different types of cookies are stored for different periods:
+
+- **Session Cookies:** These are temporary cookies that are deleted when you close your browser
+- **Persistent Cookies:** These remain on your device for a set period or until you delete them manually
+
+We regularly review and delete cookies that are no longer necessary for providing our services.
+
+## 8\. Updates to This Cookie Policy
+
+We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the updated policy on our website and updating the "Last Updated" date below.
+
+## 9\. Contact Us
+
+If you have any questions about our use of cookies or this Cookie Policy, please contact us at:
+
+- Email: wt@wmcircle.cn
+- Website: [https://voicecanvas.org](https://voicecanvas.org/)
+
+## 10\. Your Consent
+
+By continuing to use our website, you consent to our use of cookies as described in this Cookie Policy. If you do not agree to our use of cookies, please adjust your browser settings or discontinue using our website.
+
+Last Updated: December 1, 2024
+
+[![Discord](https://voicecanvas.org/images/discord.png)](https://discord.gg/966GMKhQhs "Join Our Discord Community")

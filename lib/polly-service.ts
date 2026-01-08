@@ -125,31 +125,91 @@ const languageCodeMap = {
   "cs-CZ": "cs-CZ" as LanguageCode
 };
 
-// Minimax声音配置
+// Minimax声音配置 (speech-2.6-turbo模型支持40种语言)
 const minimaxVoiceMap = {
   female: {
-    zh: 'female-qn-qingse',
-    en: 'female-qn-qingse',
-    ja: 'female-qn-qingse',
-    ko: 'female-qn-qingse',
-    es: 'female-qn-qingse',
-    fr: 'female-qn-qingse',
-    ru: 'female-qn-qingse',
-    it: 'female-qn-qingse',
-    pt: 'female-qn-qingse',
-    de: 'female-qn-qingse'
+    zh: 'female-qn-qingse',      // 中文（普通话）
+    yue: 'female-qn-qingse',     // 粤语
+    en: 'female-qn-qingse',      // 英语
+    es: 'female-qn-qingse',      // 西班牙语
+    fr: 'female-qn-qingse',      // 法语
+    ru: 'female-qn-qingse',      // 俄语
+    de: 'female-qn-qingse',      // 德语
+    pt: 'female-qn-qingse',      // 葡萄牙语
+    ar: 'female-qn-qingse',      // 阿拉伯语
+    it: 'female-qn-qingse',      // 意大利语
+    ja: 'female-qn-qingse',      // 日语
+    ko: 'female-qn-qingse',      // 韩语
+    id: 'female-qn-qingse',      // 印尼语
+    vi: 'female-qn-qingse',      // 越南语
+    tr: 'female-qn-qingse',      // 土耳其语
+    nl: 'female-qn-qingse',      // 荷兰语
+    uk: 'female-qn-qingse',      // 乌克兰语
+    th: 'female-qn-qingse',      // 泰语
+    pl: 'female-qn-qingse',      // 波兰语
+    ro: 'female-qn-qingse',      // 罗马尼亚语
+    el: 'female-qn-qingse',      // 希腊语
+    cs: 'female-qn-qingse',      // 捷克语
+    fi: 'female-qn-qingse',      // 芬兰语
+    hi: 'female-qn-qingse',      // 印地语
+    bg: 'female-qn-qingse',      // 保加利亚语
+    da: 'female-qn-qingse',      // 丹麦语
+    he: 'female-qn-qingse',      // 希伯来语
+    ms: 'female-qn-qingse',      // 马来语
+    fa: 'female-qn-qingse',      // 波斯语
+    sk: 'female-qn-qingse',      // 斯洛伐克语
+    sv: 'female-qn-qingse',      // 瑞典语
+    hr: 'female-qn-qingse',      // 克罗地亚语
+    tl: 'female-qn-qingse',      // 菲律宾语
+    hu: 'female-qn-qingse',      // 匈牙利语
+    no: 'female-qn-qingse',      // 挪威语
+    sl: 'female-qn-qingse',      // 斯洛文尼亚语
+    ca: 'female-qn-qingse',      // 加泰罗尼亚语
+    nn: 'female-qn-qingse',      // 尼诺斯克语
+    ta: 'female-qn-qingse',      // 泰米尔语
+    af: 'female-qn-qingse'       // 阿非利卡语
   },
   male: {
-    zh: 'male-qn-qingse',
-    en: 'male-qn-qingse',
-    ja: 'male-qn-qingse',
-    ko: 'male-qn-qingse',
-    es: 'male-qn-qingse',
-    fr: 'male-qn-qingse',
-    ru: 'male-qn-qingse',
-    it: 'male-qn-qingse',
-    pt: 'male-qn-qingse',
-    de: 'male-qn-qingse'
+    zh: 'male-qn-qingse',        // 中文（普通话）
+    yue: 'male-qn-qingse',       // 粤语
+    en: 'male-qn-qingse',        // 英语
+    es: 'male-qn-qingse',        // 西班牙语
+    fr: 'male-qn-qingse',        // 法语
+    ru: 'male-qn-qingse',        // 俄语
+    de: 'male-qn-qingse',        // 德语
+    pt: 'male-qn-qingse',        // 葡萄牙语
+    ar: 'male-qn-qingse',        // 阿拉伯语
+    it: 'male-qn-qingse',        // 意大利语
+    ja: 'male-qn-qingse',        // 日语
+    ko: 'male-qn-qingse',        // 韩语
+    id: 'male-qn-qingse',        // 印尼语
+    vi: 'male-qn-qingse',        // 越南语
+    tr: 'male-qn-qingse',        // 土耳其语
+    nl: 'male-qn-qingse',        // 荷兰语
+    uk: 'male-qn-qingse',        // 乌克兰语
+    th: 'male-qn-qingse',        // 泰语
+    pl: 'male-qn-qingse',        // 波兰语
+    ro: 'male-qn-qingse',        // 罗马尼亚语
+    el: 'male-qn-qingse',        // 希腊语
+    cs: 'male-qn-qingse',        // 捷克语
+    fi: 'male-qn-qingse',        // 芬兰语
+    hi: 'male-qn-qingse',        // 印地语
+    bg: 'male-qn-qingse',        // 保加利亚语
+    da: 'male-qn-qingse',        // 丹麦语
+    he: 'male-qn-qingse',        // 希伯来语
+    ms: 'male-qn-qingse',        // 马来语
+    fa: 'male-qn-qingse',        // 波斯语
+    sk: 'male-qn-qingse',        // 斯洛伐克语
+    sv: 'male-qn-qingse',        // 瑞典语
+    hr: 'male-qn-qingse',        // 克罗地亚语
+    tl: 'male-qn-qingse',        // 菲律宾语
+    hu: 'male-qn-qingse',        // 匈牙利语
+    no: 'male-qn-qingse',        // 挪威语
+    sl: 'male-qn-qingse',        // 斯洛文尼亚语
+    ca: 'male-qn-qingse',        // 加泰罗尼亚语
+    nn: 'male-qn-qingse',        // 尼诺斯克语
+    ta: 'male-qn-qingse',        // 泰米尔语
+    af: 'male-qn-qingse'         // 阿非利卡语
   }
 };
 
@@ -191,7 +251,13 @@ export async function synthesizeSpeech({
   speed = 1.0,
   service = 'aws',
   useClonedVoice = false,
-  clonedVoiceId = ''
+  clonedVoiceId = '',
+  vol = 1,
+  pitch = 0,
+  sampleRate = 32000,
+  bitrate = 128000,
+  channel = 1,
+  emotion = undefined
 }: {
   text: string;
   language: string;
@@ -201,6 +267,12 @@ export async function synthesizeSpeech({
   service?: SpeechService;
   useClonedVoice?: boolean;
   clonedVoiceId?: string;
+  vol?: number;
+  pitch?: number;
+  sampleRate?: number;
+  bitrate?: number;
+  channel?: number;
+  emotion?: "happy" | "sad" | "angry" | "fearful" | "disgusted" | "surprised" | "neutral";
 }): Promise<ArrayBuffer> {
   // 检查当前选择的语言是否支持指定的引擎
   if (service === 'aws-ntts') {
@@ -223,7 +295,7 @@ export async function synthesizeSpeech({
   if (service === 'minimax') {
     // 转换语言代码
     const minimaxLanguage = getMinimaxLanguageCode(language);
-    
+
     const response = await fetch('/api/speech', {
       method: 'POST',
       headers: {
@@ -234,7 +306,13 @@ export async function synthesizeSpeech({
         language: minimaxLanguage,
         voiceId,
         speed,
-        useClonedVoice
+        useClonedVoice,
+        vol,
+        pitch,
+        sampleRate,
+        bitrate,
+        channel,
+        emotion
       })
     });
 
@@ -315,32 +393,48 @@ export async function synthesizeSpeech({
   }
 }
 
-// Minimax支持的语言代码映射
+// Minimax支持的语言代码映射 (speech-2.6-turbo模型支持40种语言)
 const minimaxLanguageMap = {
-  'zh-CN': 'zh',
-  'en-US': 'en',
-  'ja-JP': 'ja',
-  'ko-KR': 'ko',
-  'es-ES': 'es',
-  'fr-FR': 'fr',
-  'ru-RU': 'ru',
-  'it-IT': 'it',
-  'pt-PT': 'pt',
-  'de-DE': 'de',
-  'id-ID': 'id',
-  'vi-VN': 'vi',
-  'uk-UA': 'uk',
-  'th-TH': 'th',
-  'tr-TR': 'tr',
-  'ar-SA': 'ar',
-  'nl-NL': 'nl',
-  'pl-PL': 'pl',
-  'ro-RO': 'ro',
-  'el-GR': 'el',
-  'cs-CZ': 'cs',
-  'fi-FI': 'fi',
-  'hi-IN': 'hi',
-  'yue-CN': 'yue'
+  'zh-CN': 'zh',        // 中文（普通话）
+  'yue-CN': 'yue',      // 粤语
+  'en-US': 'en',        // 英语
+  'es-ES': 'es',        // 西班牙语
+  'fr-FR': 'fr',        // 法语
+  'ru-RU': 'ru',        // 俄语
+  'de-DE': 'de',        // 德语
+  'pt-PT': 'pt',        // 葡萄牙语
+  'ar-SA': 'ar',        // 阿拉伯语
+  'it-IT': 'it',        // 意大利语
+  'ja-JP': 'ja',        // 日语
+  'ko-KR': 'ko',        // 韩语
+  'id-ID': 'id',        // 印尼语
+  'vi-VN': 'vi',        // 越南语
+  'tr-TR': 'tr',        // 土耳其语
+  'nl-NL': 'nl',        // 荷兰语
+  'uk-UA': 'uk',        // 乌克兰语
+  'th-TH': 'th',        // 泰语
+  'pl-PL': 'pl',        // 波兰语
+  'ro-RO': 'ro',        // 罗马尼亚语
+  'el-GR': 'el',        // 希腊语
+  'cs-CZ': 'cs',        // 捷克语
+  'fi-FI': 'fi',        // 芬兰语
+  'hi-IN': 'hi',        // 印地语
+  'bg-BG': 'bg',        // 保加利亚语
+  'da-DK': 'da',        // 丹麦语
+  'he-IL': 'he',        // 希伯来语
+  'ms-MY': 'ms',        // 马来语
+  'fa-IR': 'fa',        // 波斯语
+  'sk-SK': 'sk',        // 斯洛伐克语
+  'sv-SE': 'sv',        // 瑞典语
+  'hr-HR': 'hr',        // 克罗地亚语
+  'tl-PH': 'tl',        // 菲律宾语
+  'hu-HU': 'hu',        // 匈牙利语
+  'no-NO': 'no',        // 挪威语
+  'sl-SI': 'sl',        // 斯洛文尼亚语
+  'ca-ES': 'ca',        // 加泰罗尼亚语
+  'nn-NO': 'nn',        // 尼诺斯克语
+  'ta-IN': 'ta',        // 泰米尔语
+  'af-ZA': 'af'         // 阿非利卡语
 } as const;
 
 function isMinimaxSupported(language: string): boolean {
@@ -351,7 +445,18 @@ function getMinimaxLanguageCode(pollyLanguage: string): string {
   return minimaxLanguageMap[pollyLanguage as keyof typeof minimaxLanguageMap] || pollyLanguage;
 }
 
-async function synthesizeWithMinimax(text: string, language: string, isFemale: boolean): Promise<ArrayBuffer> {
+async function synthesizeWithMinimax(
+  text: string, 
+  language: string, 
+  isFemale: boolean, 
+  speed: number = 1,
+  vol: number = 1,
+  pitch: number = 0,
+  sampleRate: number = 32000,
+  bitrate: number = 128000,
+  channel: number = 1,
+  emotion?: "happy" | "sad" | "angry" | "fearful" | "disgusted" | "surprised" | "neutral"
+): Promise<ArrayBuffer> {
   const minimaxLanguage = getMinimaxLanguageCode(language);
   // 非中文固定使用女声
   const voiceId = language === 'zh-CN' 
@@ -367,7 +472,14 @@ async function synthesizeWithMinimax(text: string, language: string, isFemale: b
     body: JSON.stringify({
       text,
       language: minimaxLanguage,
-      voiceId
+      voiceId,
+      speed,
+      vol,
+      pitch,
+      sampleRate,
+      bitrate,
+      channel,
+      emotion
     }),
   });
 
@@ -635,13 +747,8 @@ export async function downloadAudio(audioData: ArrayBuffer, filename: string) {
 }
 
 export function hasSingleVoice(language: string, service?: SpeechService): boolean {
-  // Minimax模式下，只有中文支持选择音色
-  if (service === 'minimax') {
-    return language !== 'zh-CN';
-  }
-
-  // AWS Polly模式下的逻辑
-  const voices = getVoicesByLanguage(language);
+  // 统一逻辑：通过检查实际可用音色数量来判断
+  const voices = getVoicesByLanguage(language, service === 'minimax' ? 'minimax' : service === 'aws-ntts' ? 'aws-ntts' : service === 'openai' ? 'openai' : 'aws');
   if (voices.length === 0) return false;
   return voices.length === 1;
 }
@@ -677,7 +784,7 @@ export async function playMinimaxAudio(audioData: ArrayBuffer, speed: number = 1
   const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
   
   try {
-    // 创建一个新的ArrayBuffer副本，避免使用可能已分离的ArrayBuffer
+    // A创建一个新的ArrayBuffer副本，避免使用可能已分离的ArrayBuffer
     const blob = new Blob([audioData], { type: 'audio/mp3' });
     const freshArrayBuffer = await blob.arrayBuffer();
     

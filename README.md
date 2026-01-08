@@ -1,186 +1,145 @@
-# VoiceCanvas
+# Open-VoiceCanvas
 
-VoiceCanvas 是一个先进的多语言语音合成平台，使用最新的 AI 技术提供高质量的文字转语音服务和语音克隆服务。
+Open-VoiceCanvas 是一个功能强大的多语言语音合成与克隆平台，基于 Next.js 14 构建。它集成了多种顶尖的 AI 语音技术，为用户提供高质量的文字转语音 (TTS)、语音克隆、语音设计以及播客和故事生成服务。
 
-## 🌟 主要特点
+![Banner](public/images/og-image.png)
 
-### 多语言支持
-- 支持超过 50+ 种语言
+## 🌟 主要功能
 
-### 语音功能
-- 多种语音服务集成：
-  - OpenAI TTS（高质量自然语音）
-  - AWS Polly（多语言支持）
-  - MiniMax（中文优化）
-- 高质量语音合成
-- 男声/女声选择
-- 语速调节
-- 逐字朗读模式
-- 实时音频预览
-- 音频可视化
-- 智能容错机制（自动切换备选服务）
+### 🎙️ 核心语音服务
+- **多引擎支持**: 集成 OpenAI TTS、AWS Polly、MiniMax 等顶级语音合成引擎。
+- **多语言覆盖**: 支持全球 50+ 种语言和方言。
+- **语音克隆**: 上传音频样本即可快速克隆声音，打造个性化语音助手。
+- **语音设计**: 自定义音色参数（语速、音调、音量等），创造独一无二的声音。
 
-### 语音克隆
-- 个人声音克隆功能
-- 上传音频样本创建个性化声音
-- 克隆声音管理
-- 克隆声音配额控制
+### 🎨 创意工坊
+- **播客生成**: 自动生成多人对话形式的播客音频。
+- **故事创作**: 智能生成配音故事，支持长文本处理。
+- **实时预览**: 支持文本到语音的实时流式播放和音频可视化波形展示。
 
-### 文件处理
-- 支持文本文件上传
-- 音频文件下载
-- 支持长文本处理
-
-### 用户系统
-- 用户注册和登录
-- 第三方登录（Google、GitHub）
-- 多语言界面
-- 深色/浅色主题切换
-
-### 订阅系统
-- 免费试用计划
-- 按年/按月订阅
-- 按量付费选项
-- 字符配额管理
-- 克隆声音配额管理
+### 🛡️ 企业级特性
+- **用户认证**: 完善的注册/登录系统，支持 GitHub、Google 第三方登录。
+- **订阅支付**: 集成 Stripe 支付系统，支持按月/年订阅及按量付费模式。
+- **配额管理**: 精确的字符数和克隆声音数量配额控制。
+- **国际化**: 原生支持多语言界面 (i18n)。
 
 ## 🛠️ 技术栈
 
-- **前端框架**: Next.js 14
-- **UI 组件**: Tailwind CSS, shadcn/ui
-- **认证**: NextAuth.js
-- **数据库**: PostgreSQL (Neon)
-- **ORM**: Prisma
-- **语音服务**: 
-  - OpenAI TTS
-  - AWS Polly
-  - MiniMax
-- **部署**: Vercel
+### 前端
+- **框架**: [Next.js 14](https://nextjs.org/) (App Router)
+- **语言**: TypeScript
+- **样式**: [Tailwind CSS](https://tailwindcss.com/)
+- **组件库**: [shadcn/ui](https://ui.shadcn.com/), Radix UI
+- **动画**: Framer Motion
+- **状态管理**: React Hooks
 
-## 📦 安装
+### 后端 & 基础设施
+- **数据库**: PostgreSQL (适配 Neon/Supabase)
+- **ORM**: [Prisma](https://www.prisma.io/)
+- **认证**: [NextAuth.js](https://next-auth.js.org/) (Auth.js)
+- **支付**: Stripe API
+- **邮件**: Resend
+- **存储**: AWS S3 / Vercel Blob (用于音频存储)
 
-1. 克隆仓库
+### AI 服务集成
+- **OpenAI**: TTS 模型
+- **AWS**: Polly 服务
+- **MiniMax**: 中文语音优化
+- **DeepSeek / Qwen**: 文本处理与生成支持
+
+## � 快速开始
+
+### 环境要求
+- Node.js 18+
+- PostgreSQL 数据库
+- 各类 API Keys (OpenAI, AWS, Stripe 等)
+
+### 1. 克隆项目
 ```bash
 git clone https://github.com/ItusiAI/Open-VoiceCanvas.git
 cd Open-VoiceCanvas
 ```
 
-2. 安装依赖
+### 2. 安装依赖
 ```bash
 npm install
+# 或者
+yarn install
+# 或者
+pnpm install
 ```
 
-3. 配置环境变量
+### 3. 配置环境变量
+复制 `.env.example` 文件为 `.env`，并填入你的 API 密钥和配置信息：
+
 ```bash
-# 创建 .env 文件并添加以下配置
-
-# OpenAI
-OPENAI_API_KEY="your_openai_api_key"
-
-# AWS Polly
-NEXT_PUBLIC_AWS_REGION="us-east-1"
-NEXT_PUBLIC_AWS_ACCESS_KEY_ID="your_aws_access_key_id"
-NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY="your_aws_secret_access_key"
-
-# MiniMax
-MINIMAX_API_KEY="your_minimax_api_key"
-MINIMAX_GROUP_ID="your_minimax_group_id"
-
-# Database
-DATABASE_URL="your_neon_db_url"
-
-# Stripe
-STRIPE_SECRET_KEY="your_stripe_secret_key"
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="your_stripe_publishable_key"
-STRIPE_WEBHOOK_SECRET="your_stripe_webhook_secret"
-
-# NextAuth 配置
-NEXTAUTH_URL="http://localhost:3000"
-NEXTAUTH_SECRET="your_nextauth_secret"
-
-# OAuth 提供商配置
-GITHUB_ID="your_github_client_id"
-GITHUB_SECRET="your_github_client_secret"
-GOOGLE_ID="your_google_client_id"
-GOOGLE_SECRET="your_google_client_secret"
+cp .env.example .env
 ```
 
-4. 运行数据库迁移
+关键配置项说明：
+- `DATABASE_URL`: PostgreSQL 连接字符串
+- `NEXTAUTH_SECRET`: NextAuth 加密密钥
+- `OPENAI_API_KEY`: OpenAI 接口密钥
+- `STRIPE_SECRET_KEY`: Stripe 支付私钥
+- `AWS_ACCESS_KEY_ID`: AWS 访问密钥 (用于 Polly)
+
+### 4. 数据库迁移
+使用 Prisma 同步数据库结构：
+
 ```bash
-npx prisma migrate dev
+npx prisma generate
+npx prisma db push
 ```
 
-5. 启动开发服务器
+### 5. 启动开发服务器
 ```bash
 npm run dev
 ```
 
-## 🔑 环境变量
+访问 [http://localhost:3000](http://localhost:3000) 查看应用。
 
-| 变量名 | 描述 | 必需 |
-|--------|------|------|
-| OPENAI_API_KEY | OpenAI API 密钥 | 是 |
-| NEXT_PUBLIC_AWS_REGION | AWS 区域 (默认 us-east-1) | 是 |
-| NEXT_PUBLIC_AWS_ACCESS_KEY_ID | AWS 访问密钥 ID | 是 |
-| NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY | AWS 访问密钥 | 是 |
-| MINIMAX_API_KEY | MiniMax API 密钥 | 是 |
-| MINIMAX_GROUP_ID | MiniMax 组 ID | 是 |
-| DATABASE_URL | Neon PostgreSQL 数据库连接 URL | 是 |
-| STRIPE_SECRET_KEY | Stripe 密钥 | 是 |
-| NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY | Stripe 公钥 | 是 |
-| STRIPE_WEBHOOK_SECRET | Stripe Webhook 密钥 | 是 |
-| NEXTAUTH_URL | NextAuth URL (开发环境为 http://localhost:3000) | 是 |
-| NEXTAUTH_SECRET | NextAuth 密钥 | 是 |
-| GITHUB_ID | GitHub OAuth 客户端 ID | 否 |
-| GITHUB_SECRET | GitHub OAuth 客户端密钥 | 否 |
-| GOOGLE_ID | Google OAuth 客户端 ID | 否 |
-| GOOGLE_SECRET | Google OAuth 客户端密钥 | 否 |
+## � 项目结构
 
-## 📝 数据库模型
+```
+Open-VoiceCanvas/
+├── app/                 # Next.js App Router 页面与 API
+│   ├── api/             # 后端 API 路由
+│   ├── auth/            # 认证相关页面
+│   ├── cloning/         # 语音克隆页面
+│   ├── design/          # 语音设计页面
+│   ├── podcast/         # 播客生成页面
+│   └── ...
+├── components/          # React 组件
+│   ├── ui/              # 基础 UI 组件 (shadcn)
+│   └── ...              # 业务组件
+├── lib/                 # 工具函数与库配置
+│   ├── i18n/            # 国际化配置
+│   ├── prisma.ts        # 数据库客户端
+│   └── ...
+├── prisma/              # 数据库 Schema 与迁移
+├── public/              # 静态资源
+└── scripts/             # 维护与工具脚本
+```
 
-### 用户 (users)
-- 基本信息：邮箱、密码、名称、头像
-- 认证信息：提供商、提供商 ID
-- 使用统计：总字符使用量、最后使用时间
-- 偏好设置：语言、时区
+## � 脚本命令
 
-### 订阅 (Subscription)
-- 计划类型
-- 开始和结束日期
-- 状态
+- `npm run dev`: 启动开发服务器
+- `npm run build`: 构建生产版本
+- `npm run start`: 运行生产版本
+- `npm run lint`: 代码风格检查
+- `npm run db:analyze`: 数据库分析脚本
+- `npm run check:translations`: 检查翻译缺失
 
-### 字符配额 (CharacterQuota)
-- 永久配额
-- 临时配额
-- 已使用字符数
-- 配额过期时间
+## 🤝 贡献
 
-### 克隆声音 (ClonedVoice)
-- 声音ID
-- 用户ID
-- 名称
-- 创建时间
+欢迎提交 Pull Request 或 Issue！
 
-## 🔊 支持的语音服务
-
-### OpenAI TTS
-- 高质量自然语音
-- 支持多种声音：alloy, echo, fable, onyx, nova, shimmer, ash, coral, ballad, sage
-- 语速调节
-- 自动容错（失败时切换到AWS Polly）
-
-### AWS Polly
-- 多语言支持
-- 多种声音选择
-- 语速调节
-
-### MiniMax
-- 中文优化
-- 语音克隆功能
-- 多语言支持
-- 语速调节
-
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 提交 Pull Request
 
 ## 📄 许可证
 
-版权所有 © 2025 VoiceCanvas 
+[MIT](LICENSE) © ItusiAI

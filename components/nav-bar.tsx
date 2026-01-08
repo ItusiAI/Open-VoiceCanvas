@@ -132,6 +132,24 @@ export function NavBar() {
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></div>
             </Link>
             <Link
+              href="/design"
+              className="text-base font-bold relative group"
+            >
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+                {t('voiceDesign')}
+              </span>
+              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></div>
+            </Link>
+            <Link
+              href="/podcast"
+              className="text-base font-bold relative group"
+            >
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+                {t('aiPodcast')}
+              </span>
+              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></div>
+            </Link>
+            <Link
               href="/pricing"
               className="text-base font-bold relative group"
             >
@@ -214,7 +232,7 @@ export function NavBar() {
                       </AvatarFallback>
                     </Avatar>
                     <span className="hidden md:inline-block text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 group-hover:opacity-80 transition-opacity duration-300">
-                      {session.user.name || session.user.email}
+                      {session.user.name}
                     </span>
                     <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-lg opacity-0 group-hover:opacity-100 transition-all duration-300 -z-10" />
                   </Button>

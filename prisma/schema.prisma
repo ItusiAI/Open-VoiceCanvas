@@ -85,6 +85,23 @@ model ClonedVoice {
   @@index([userId])
 }
 
+model DesignedVoice {
+  id              String   @id @default(cuid())
+  userId          String
+  name            String
+  language        String
+  description     String   // 音色描述词
+  speed           Float    @default(1.0)
+  volume          Float    @default(1.0)
+  pitch           Int      @default(0)
+  voiceId         String   // 生成的音色ID，用于语音合成
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  user            users    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
 model users {
   id                  String          @id @default(cuid())
   email               String          @unique
@@ -111,6 +128,7 @@ model users {
   accounts            Account[]
   characterQuota      CharacterQuota?
   clonedVoices        ClonedVoice[]
+  designedVoices      DesignedVoice[]
   resetTokens         ResetToken[]
   sessions            Session[]
   subscription        Subscription?

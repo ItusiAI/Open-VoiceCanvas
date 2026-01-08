@@ -123,8 +123,10 @@ export function AuthDialog({ isOpen, onClose }: AuthDialogProps) {
   const handleGithubLogin = async () => {
     try {
       setIsGithubLoading(true);
+      console.log('开始 GitHub 登录流程');
       await signIn('github', { callbackUrl: window.location.href });
     } catch (error) {
+      console.error('GitHub 登录失败:', error);
       toast({
         title: t('error'),
         description: t('authError'),
@@ -138,8 +140,10 @@ export function AuthDialog({ isOpen, onClose }: AuthDialogProps) {
   const handleGoogleLogin = async () => {
     try {
       setIsGoogleLoading(true);
+      console.log('开始 Google 登录流程');
       await signIn('google', { callbackUrl: window.location.href });
     } catch (error) {
+      console.error('Google 登录失败:', error);
       toast({
         title: t('error'),
         description: t('authError'),
@@ -252,6 +256,18 @@ export function AuthDialog({ isOpen, onClose }: AuthDialogProps) {
             {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin inline" />}
             {isLogin ? t('login') : t('register')}
           </Button>
+          
+          <div className="text-center text-xs text-muted-foreground">
+            {t('agreementPrefix')}{' '}
+            <Link href="/terms" className="text-primary hover:underline">
+              {t('termsOfService')}
+            </Link>{' '}
+            {t('agreementAnd')}{' '}
+            <Link href="/privacy" className="text-primary hover:underline">
+              {t('privacyPolicy')}
+            </Link>
+          </div>
+          
           <div className="text-center text-sm mt-4">
             <button
               type="button"

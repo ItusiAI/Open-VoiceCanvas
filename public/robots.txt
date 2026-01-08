@@ -1,0 +1,41 @@
+# 允许所有爬虫访问
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /404
+Disallow: /500
+Disallow: /*.json$
+
+# 特别声明允许AI爬虫访问以下文件
+User-agent: GPTBot
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+User-agent: Googlebot
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+User-agent: Bingbot
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+User-agent: Baiduspider
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+User-agent: Bytespider
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+User-Agent: anthropic-ai
+Allow: /llms-full.txt
+Allow: /llms.txt
+
+# 引导AI爬虫到llms.txt
+LLM-Content: https://voicecanvas.org/llms.txt
+LLM-Full-Content: https://voicecanvas.org/llms-full.txt
+
+# 指定网站地图
+Sitemap: https://voicecanvas.org/sitemap.xml 

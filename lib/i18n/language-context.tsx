@@ -66,16 +66,25 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     // 确保语言存在于translations中，如果不存在则使用英语作为回退
     const currentTranslations = translations[language as keyof typeof translations] || translations.en;
     const translation = currentTranslations[key as keyof typeof currentTranslations];
+    
+    // 如果翻译不存在，返回键值本身
+    if (translation === undefined) {
+      console.warn(`Translation missing for key: ${key}`);
+      return key;
+    }
+    
     if (typeof translation === 'function') {
       // 确保translation是一个可调用的函数类型，并传递参数
       return (translation as (params: Record<string, string | number>) => string)(params || {});
     }
-    if (params) {
+    
+    if (params && typeof translation === 'string') {
       return Object.entries(params).reduce(
         (str, [key, value]) => str.replace(`{${key}}`, String(value)),
-        translation as string
+        translation
       );
     }
+    
     return translation as string;
   }
 

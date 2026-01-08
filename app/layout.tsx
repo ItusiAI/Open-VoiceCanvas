@@ -6,6 +6,8 @@ import { getServerSession } from "next-auth";
 import { Footer } from "@/components/footer";
 import { Toaster } from "@/components/ui/toaster";
 import { GoogleAnalytics } from "@/components/google-analytics";
+import { UmamiAnalytics } from "@/components/umami-analytics";
+import { TitleUpdater } from './title-updater';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -289,16 +291,18 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const session = await getServerSession();
-
+  
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <GoogleAnalytics />
+        <UmamiAnalytics />
       </head>
       <body className={inter.className}>
         <Providers session={session}>
           <div className="flex flex-col min-h-screen">
             <div className="flex-1">
+              <TitleUpdater />
               {children}
             </div>
             <Footer />

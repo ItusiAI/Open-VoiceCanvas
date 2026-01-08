@@ -89,7 +89,7 @@ export default function ProfilePage() {
       setError(null);
       const response = await fetch('/api/user/plan');
       if (!response.ok) {
-        throw new Error('获取用户数据失败');
+        throw new Error(t('fetchUserDataError'));
       }
       const data = await response.json();
       setUserPlan(data);
@@ -100,7 +100,7 @@ export default function ProfilePage() {
         triggerConfetti();
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : '获取用户数据失败');
+      setError(err instanceof Error ? err.message : t('fetchUserDataError'));
     } finally {
       setLoading(false);
     }
